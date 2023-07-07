@@ -1,0 +1,29 @@
+.waveUp{
+    position: fixed;
+    top: -7%;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+    background-image: url("../public/BG-DESIGN.svg"); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.navBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; 
+}
+
+.landingPage{
+    display: flex;
+    align-items: center;
+   height: 100%; /* Ensure the parent element has a height */
+
+}
+
+.footer {
+    margin-top: auto;
+  }
