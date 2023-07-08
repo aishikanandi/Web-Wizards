@@ -28,3 +28,22 @@
 .footer {
     margin-top: auto;
   }
+  .centerLogo {
+display: flex;
+    margin: 0 auto;
+    width: 20%;
+    margin-top: 6%;
+    padding-bottom: 4%;
+  }  
+  .mainLogo{
+    padding: 4%;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .mainLogo{
+        padding: 6%;
+    }  
+    .centerLogo{
+        width: 28%;
+    }  
+  }
