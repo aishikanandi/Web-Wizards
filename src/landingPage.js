@@ -15,8 +15,8 @@ function LandingPage() {
         src="openlakelogo.svg"
       ></img></div>
 	  <WaterText/>
-      <Footer className="footer" />
-    </React.Fragment>
+     <Footer className="footer" /> 
+     </React.Fragment>
   );
 }
 

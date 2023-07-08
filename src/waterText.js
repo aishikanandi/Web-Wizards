@@ -3,15 +3,11 @@ import './waterText.css'
 
 function waterText() {
   return (
-    <div class="content" >
-      <div className="waterCenter" style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-        <p >OpenLake</p>
+    <div className='waterTextDiv'>
+      <div className='content' >
         <p>OpenLake</p>
-      </div>
+        <p>OpenLake</p>
+    </div>
     </div>
   )
 }
