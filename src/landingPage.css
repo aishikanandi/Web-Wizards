@@ -5,7 +5,7 @@
     height: 50vh;
     width: 100%;
     background-image: url("../public/BG-DESIGN.svg"); /* Replace with the path to your background image */
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     z-index: -1;
 }
@@ -20,7 +20,6 @@
 .landingPage{
     display: flex;
     align-items: center;
-   height: 100%; /* Ensure the parent element has a height */
 
 }
 
@@ -31,18 +30,54 @@
 display: flex;
     margin: 0 auto;
     width: 20%;
-    margin-top: 6%;
-    padding-bottom: 4%;
   }  
   .mainLogo{
-    padding: 4%;
+    padding: 4% 0;
   }
+
+  @media only screen and (max-width: 1350px) {
+    .mainLogo{
+      padding: 8% 6%;
+  }  
+  .centerLogo{
+      width: 28%;
+  }
+  }
+
 
   @media only screen and (max-width: 1024px) {
     .mainLogo{
-        padding: 6%;
+        padding: 7% 6%;
     }  
     .centerLogo{
-        width: 28%;
-    }  
+        width: 32%;
+    }
+    .waveUp{
+      height: 40vh;
+    } 
+  }
+
+  @media only screen and (max-width: 720px) {
+    .centerLogo{
+        width: 32%;
+    }
+    .waveUp{
+      top: -2%;
+    left: 0;
+    height: 30%;
+    } 
+  }
+
+  @media only screen and (max-width: 455px) {
+    .centerLogo{
+        width: 32%;
+    }
+    .waveUp{
+      top: -8%;
+    left: 0;
+    height: 30%;
+    } 
+    .mainLogo{
+      padding: 2% 0 4% 0;
+    }
   }

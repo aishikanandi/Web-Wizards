@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-.content{
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
+.waterTextDiv{
+    margin: 0;
+    padding-bottom: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.waterCenter p{
+.waterTextDiv p{
     transform: translate(-50%, -50%);
-    font-size: 8em;
+    font-size: 780%;
     font-weight: bolder;
     position: absolute;
     display: flex;
 }
 
-.content p:nth-child(1){
+.waterTextDiv p:nth-child(1){
     color: transparent;
     -webkit-text-stroke: 2px #ffffff;
 }
 
-.content p:nth-child(2){
+.waterTextDiv p:nth-child(2){
     color: #ffffff;
     animation: animate 3s ease-in-out infinite;
 }
@@ -31,12 +34,20 @@
     50%{
         clip-path: polygon(0% 42%, 13% 47%, 29% 60%, 43% 60%, 59% 56%, 70% 50%, 82% 37%, 94% 34%, 100% 40%, 100% 99%, 0% 100%);
     }
-}
+} 
+
+@media only screen and (max-width: 1350px) {
+    .waterTextDiv p{font-size: 780%;}
+ }
 
 
-/* @media only screen and (max-width: 1024px) {
-    .content{
-        padding-top: 8%;
-        
-    }
-} */
+ @media only screen and (max-width: 1024px) {
+    .waterTextDiv p{font-size: 600%;}
+ }
+
+ @media only screen and (max-width: 720px) {
+    .waterTextDiv p{font-size: 500%;}
+ }
+ @media only screen and (max-width: 455px) {
+    .waterTextDiv p{font-size: 780%;}
+ }
