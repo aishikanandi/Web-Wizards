@@ -8,7 +8,6 @@
 }
 .logo {
     margin-top: 1%;
-    margin-right: 20%;
     display: flex;
     align-items: center;
     height: 100%; 
@@ -33,7 +32,6 @@ header {
 }
 
 header .nav-items{
-  margin-left: auto;
   display: flex;
 	align-items: center;
 	justify-content: space-between; 
@@ -46,7 +44,7 @@ nav {
 }
 
 nav a {
-	margin: 0 3rem;
+	margin: 0 2rem;
 	color: var(--textColor);
 	text-decoration: none;
     font-weight: bolder;
@@ -110,7 +108,7 @@ header .nav-btn {
 	}
     
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 720px) {
 	.logo img{
 		height: 50%;
 		width: auto;
