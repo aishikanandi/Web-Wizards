@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
 .waveUp{
     position: absolute;
     top: -7%;
     left: 0;
     height: 50vh;
     width: 100%;
-    background-image: url("../public/BG-DESIGN2.svg"); /* Replace with the path to your background image */
+    background-image: url("BG-DESIGN2.svg"); /* Replace with the path to your background image */
     background-size:cover;
     background-position: center;
     z-index: -1;
@@ -17,13 +19,14 @@
     z-index: 1; 
 }
 .tagline{
-  font: Poppins, 'san-serif';
+  /* font: Poppins, 'sans-serif'; */
   display: flex;
     align-items: center;
     justify-content: center;
     color: rgb(167, 212, 243);
-    margin-left: 4%;
-}
+    margin-left: 5%;
+    margin-top: 0.7%;
+  }
 .landingPage{
     display: flex;
     align-items: center;
@@ -53,14 +56,14 @@ display: flex;
   }
   @media only screen and (max-width: 1350px) {
     .tagline{
-      margin-left: 6%;
-      margin-top: 0.6%;
+      margin-left: 8%;
+      margin-top: 1.4%;
     }
   }
   @media only screen and (max-width: 1110px) {
     .tagline{
-      margin-left: 6%;
-      margin-top: 1.2%;
+      margin-left: 8%;
+      margin-top: 1.5%;
     }
   }
   @media only screen and (max-width: 1024px) {
@@ -76,20 +79,20 @@ display: flex;
   }
   @media only screen and (max-width: 1024px) {
     .tagline{
-      margin-left: 15%;
-      margin-top: 1%;
+      margin-left: 17%;
+      margin-top: 1.5%;
     }
   }
   @media only screen and (max-width: 880px) {
     .tagline{
-      margin-left: 17%;
-      margin-top: 1.4%;
+      margin-left: 19%;
+      margin-top: 1.8%;
     }
   }
   @media only screen and (max-width: 760px) {
     .tagline{
       margin-left: 19%;
-      margin-top: 1.6%;
+      margin-top: 1.8%;
     }
   }
   @media only screen and (max-width: 720px) {
@@ -103,14 +106,14 @@ display: flex;
     } 
     .tagline{
       font-size:80%;
-      margin-left: 15%;
-      margin-top: 1.6%;
+      margin-left: 18%;
+      margin-top: 1.8%;
     }
   }
   @media only screen and (max-width: 650px) {
     .tagline{
-      margin-left: 16.5%;
-      margin-top: 1.9%;
+      margin-left: 18.5%;
+      margin-top: 2%;
     }
   }
   @media only screen and (max-width: 570px) {
@@ -122,8 +125,8 @@ display: flex;
   @media only screen and (max-width: 540px) {
     .tagline{
       font-size: 60%;
-      margin-left: 18%;
-      margin-top: 2.5%;
+      margin-left: 20%;
+      margin-top: 3%;
     }
   }
   @media only screen and (max-width: 455px) {
@@ -142,21 +145,21 @@ display: flex;
   @media only screen and (max-width: 480px) {
     .tagline{
       font-size: 60%;
-      margin-left: 19%;
-      margin-top: 3%;
+      margin-left: 20%;
+      margin-top: 3.5%;
     }
   }
   @media only screen and (max-width: 445px) {
     .tagline{
       font-size: 50%;
-      margin-left: 18%;
-      margin-top: 2.5%;
+      margin-left: 20%;
+      margin-top: 3.5%;
     }
   }
   @media only screen and (max-width: 385px) {
     .tagline{
       font-size: 50%;
-      margin-left: 27%;
-      margin-top: 2.5%;
+      margin-left: 32%;
+      margin-top: 4%;
     }
   }
