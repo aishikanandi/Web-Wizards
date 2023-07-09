@@ -4,9 +4,9 @@ import { ReactComponent as LearnMoreButton } from './ProjectPageElements/Learn-m
 function ProjectCard(props) {
   return (
     <div className="project-card">
-      <div className="card">
+      <div className="cardprojectpage">
         <div>
-          <img src={props.screenshot} alt="No-image" className="screenshot" />
+          <img src={props.screenshot} alt="No-image" className="screenshotprojectpage" />
         </div>
         <h1 className="project-name">{props.projectName}</h1>
         <p className="project-description">{props.description}</p>

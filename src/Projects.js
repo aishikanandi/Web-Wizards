@@ -4,8 +4,8 @@ import './Projects.css';
 import { ReactComponent as BackgroundDesign } from './ProjectPageElements/BG-DESIGN (1)projectpage.svg';
 import { ReactComponent as TitleImage } from './ProjectPageElements/PROJECTS.svg';
 import { ReactComponent as ListOfProjectsImage } from './ProjectPageElements/LIST OF PROJECTS.svg';
-import Navbar from "./navbar";
-import Footer from "./footer";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import "./landingPage.css";
 
 function Projects() {
@@ -20,7 +20,7 @@ function Projects() {
 <div className="list-of-image-container">
   <ListOfProjectsImage className="list-of-projects-image" alt="list" />
 </div>
-      <div  className="background-design">
+      <div  className="display_cards_projectpage">
         <RenderProjectCards />
       </div>
     </div>    

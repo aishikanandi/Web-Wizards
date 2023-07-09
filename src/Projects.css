@@ -15,7 +15,7 @@ body {
     z-index: -1;
 }
   
-  .background-design {
+  .display_cards_projectpage{
     position: absolute;
     top: 0;
     left: 0;
@@ -48,7 +48,7 @@ body {
   }
  
   
-  .card {
+  .cardprojectpage{
     position: relative;
     width: 100%;
     background: #0C1B2A;
@@ -56,7 +56,7 @@ body {
     z-index: 2;
   }
   
-  .screenshot {
+  .screenshotprojectpage{
     
     margin-top: -1%;
     max-width: 100%;
