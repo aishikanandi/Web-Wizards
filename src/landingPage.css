@@ -25,7 +25,7 @@
     justify-content: center;
     color: rgb(167, 212, 243);
     margin-left: 5%;
-    margin-top: 0.7%;
+    margin-top: 0.4%;
   }
 .landingPage{
     display: flex;
@@ -91,8 +91,8 @@ display: flex;
   }
   @media only screen and (max-width: 760px) {
     .tagline{
-      margin-left: 19%;
-      margin-top: 1.8%;
+      margin-left: 22%;
+      margin-top: 2%;
     }
   }
   @media only screen and (max-width: 720px) {
@@ -118,9 +118,10 @@ display: flex;
   }
   @media only screen and (max-width: 570px) {
     .tagline{
-      margin-left: 19%;
+      margin-left: 20%;
       margin-top: 2.8%;
     }
+
   }
   @media only screen and (max-width: 540px) {
     .tagline{
@@ -159,7 +160,17 @@ display: flex;
   @media only screen and (max-width: 385px) {
     .tagline{
       font-size: 50%;
-      margin-left: 32%;
+      margin-left: 29%;
       margin-top: 4%;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .tagline{
+      font-size: 50%;
+      margin-left: 33%;
+      margin-top: 10.5%;
+    }
+    .mainLogo{
+      padding: 8% 0 3% 0;
     }
   }

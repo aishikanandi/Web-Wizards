@@ -19,10 +19,9 @@ function LandingPage() {
 	  <WaterText/> 
     <div className="tagline"><h2>Embrace the waves of Open Source!</h2></div>
     <Waves />
-    {/* <App /> */}
-      <Footer className="footer" />  
-     
-     </React.Fragment> 
+    <App/>
+    <Footer className="footer" />   
+    </React.Fragment> 
   );
 }
 

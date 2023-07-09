@@ -8,31 +8,36 @@ function App() {
     {
       key: uuidv4(),
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/convertplus_thumbnail.jpg" />
+        <Card imagen="calendar.png" />
       )
     },
     {
       key: uuidv4(),
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/acf_pro.png" />
+        <Card imagen="activity tracker.png" />
       )
     },
     {
       key: uuidv4(),
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/layer_slider_plugin_thumb.png" />
+        <Card imagen="WatchParty.png" />
+      )
+    },{
+      key: uuidv4(),
+      content: (
+        <Card imagen="calendar.png" />
       )
     },
     {
       key: uuidv4(),
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png" />
+        <Card imagen="activity tracker.png" />
       )
     },
     {
       key: uuidv4(),
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2019/01/pwa_880_660.jpg" />
+        <Card imagen="WatchParty.png" />
       )
     }
   ];
@@ -41,7 +46,7 @@ function App() {
       <Carousel
         cards={cards}
         height="500px"
-        width="30%"
+        width="40%"
         margin="0 auto"
         offset={2}
         showArrows={false}
