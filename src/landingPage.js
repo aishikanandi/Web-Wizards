@@ -4,7 +4,8 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import WaterText from "./components/waterText";
 import Waves from "./components/waves";
-import App from "./components/CarouselApp.js";
+import Carousel from "./components/CarouselApp.js";
+import Intro from "./components/Intro.js";
 
 function LandingPage() {
   return (
@@ -19,7 +20,8 @@ function LandingPage() {
 	  <WaterText/> 
     <div className="tagline"><h2>Embrace the waves of Open Source!</h2></div>
     <Waves />
-    <App/>
+    <Intro />
+    <Carousel/>
     <Footer className="footer" />   
     </React.Fragment> 
   );
