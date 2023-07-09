@@ -89,7 +89,7 @@ header .nav-btn {
 	}
 
 	header .responsive_nav {
-
+		z-index: 1002;
 		transform: translateY(120vh);
 	}
 
