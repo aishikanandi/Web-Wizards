@@ -30,19 +30,6 @@ function Waves() {
             <div className='wav' id="wave3" style={{'--i':3}}></div>
             <div className='wav' id="wave4" style={{'--i':4}}></div>
         </section>
-        <div className='sec'>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat ac eros ac molestie. Nam a ante vitae ex dignissim tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin sed dui neque. Donec nisl nibh, pharetra nec dui sit amet, ultrices tempor nisi. Praesent scelerisque efficitur turpis, sed rhoncus dolor mattis eu. Ut quis condimentum leo. Ut blandit porta nisl sed euismod. Praesent pretium, tortor ac efficitur vehicula, ex lorem scelerisque nisi, non vestibulum felis mauris quis nunc. Donec feugiat, justo venenatis elementum posuere, ante justo porta nulla, id aliquet leo dolor et ligula. Nulla vitae nibh malesuada, lacinia nunc in, ornare sem. Donec interdum mauris non sapien finibus, non interdum mauris elementum.
-
-Cras tincidunt rutrum euismod. Suspendisse vitae ultricies odio, sit amet maximus tellus. Morbi tincidunt faucibus ante, nec condimentum dolor vehicula et. Nullam scelerisque pretium feugiat. Nulla molestie nibh at viverra venenatis. Aenean at consequat felis. Morbi vel porttitor dui, eu interdum nisi. Maecenas pharetra quis neque ut facilisis. Nam lacinia ullamcorper rutrum. Curabitur eu rutrum leo. Nunc porttitor risus sit amet magna hendrerit vestibulum. Pellentesque odio ipsum, viverra a accumsan sit amet, elementum eget neque. Morbi at nibh consequat, lobortis metus quis, dapibus dui. Nullam a orci a neque luctus laoreet. Vestibulum tincidunt risus sit amet ultricies aliquet. Vestibulum gravida convallis orci eu ornare.
-          </p>
-          <br></br>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat ac eros ac molestie. Nam a ante vitae ex dignissim tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin sed dui neque. Donec nisl nibh, pharetra nec dui sit amet, ultrices tempor nisi. Praesent scelerisque efficitur turpis, sed rhoncus dolor mattis eu. Ut quis condimentum leo. Ut blandit porta nisl sed euismod. Praesent pretium, tortor ac efficitur vehicula, ex lorem scelerisque nisi, non vestibulum felis mauris quis nunc. Donec feugiat, justo venenatis elementum posuere, ante justo porta nulla, id aliquet leo dolor et ligula. Nulla vitae nibh malesuada, lacinia nunc in, ornare sem. Donec interdum mauris non sapien finibus, non interdum mauris elementum.
-
-Cras tincidunt rutrum euismod. Suspendisse vitae ultricies odio, sit amet maximus tellus. Morbi tincidunt faucibus ante, nec condimentum dolor vehicula et. Nullam scelerisque pretium feugiat. Nulla molestie nibh at viverra venenatis. Aenean at consequat felis. Morbi vel porttitor dui, eu interdum nisi. Maecenas pharetra quis neque ut facilisis. Nam lacinia ullamcorper rutrum. Curabitur eu rutrum leo. Nunc porttitor risus sit amet magna hendrerit vestibulum. Pellentesque odio ipsum, viverra a accumsan sit amet, elementum eget neque. Morbi at nibh consequat, lobortis metus quis, dapibus dui. Nullam a orci a neque luctus laoreet. Vestibulum tincidunt risus sit amet ultricies aliquet. Vestibulum gravida convallis orci eu ornare.
-          </p>
-        </div>
     </div>
   )
 }

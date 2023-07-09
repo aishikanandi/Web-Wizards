@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 .waterTextDiv{
-    padding-bottom: 9%;
+    padding-bottom: 2.5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,5 +49,11 @@
     .waterTextDiv p{font-size: 500%;}
  }
  @media only screen and (max-width: 540px) {
-    .waterTextDiv p{font-size: 350%; padding-top: 5%;}
+    .waterTextDiv p{font-size: 350%; padding-top: 3%;}
+ }
+ @media only screen and (max-width: 445px) {
+    .waterTextDiv p{font-size: 300%; padding-top: 3%;}
+ }
+ @media only screen and (max-width: 385px) {
+    .waterTextDiv p{font-size: 250%; padding-top: 3%;}
  }

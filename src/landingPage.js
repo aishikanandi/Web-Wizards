@@ -16,6 +16,7 @@ function LandingPage() {
         src="openlakelogo.svg"
       ></img></div>
 	  <WaterText/> 
+    <div className="tagline"><h2>Embrace the waves of Open Source!</h2></div>
     <Waves />
       <Footer className="footer" />  
      

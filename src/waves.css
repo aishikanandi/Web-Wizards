@@ -8,7 +8,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    padding: 1%;
+    padding: 8% 1% 1% 1%;
 }
 .sec{
     padding: 7%;
@@ -57,26 +57,26 @@
 
 @media only screen and (max-width: 1560px) {
     .wavesMainDiv section{
-        padding: 3%;
+        padding: 5%;
     }
 }
 
 @media only screen and (max-width: 1080px) {
     .wavesMainDiv section{
-        padding: 4%;
+        padding: 6%;
     }
 }
 
 @media only screen and (max-width: 960px) {
     .wavesMainDiv section{
-        padding: 5.5%;
+        padding: 7.5%;
     }
     
 }
 
 @media only screen and (max-width: 760px) {
     .wavesMainDiv section{
-        padding: 7%;
+        padding: 9%;
         
     }
 }
@@ -92,7 +92,7 @@
         padding: 6%;
     }
     .wav{
-        height: 80%;
+        height: 85%;
     }
 }
 

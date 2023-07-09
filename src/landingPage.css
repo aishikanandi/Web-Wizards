@@ -16,10 +16,18 @@
     width: 100%;
     z-index: 1; 
 }
-
+.tagline{
+  font: Poppins, 'san-serif';
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(167, 212, 243);
+    margin-left: 4%;
+}
 .landingPage{
     display: flex;
     align-items: center;
+    
 
 }
 
@@ -32,7 +40,7 @@ display: flex;
     width: 20%;
   }  
   .mainLogo{
-    padding: 4% 0;
+    padding: 4% 0 3% 0;
   }
 
   @media only screen and (max-width: 1350px) {
@@ -43,8 +51,18 @@ display: flex;
       width: 28%;
   }
   }
-
-
+  @media only screen and (max-width: 1350px) {
+    .tagline{
+      margin-left: 6%;
+      margin-top: 0.6%;
+    }
+  }
+  @media only screen and (max-width: 1110px) {
+    .tagline{
+      margin-left: 6%;
+      margin-top: 1.2%;
+    }
+  }
   @media only screen and (max-width: 1024px) {
     .mainLogo{
         padding: 7% 6%;
@@ -56,7 +74,24 @@ display: flex;
       height: 40vh;
     } 
   }
-
+  @media only screen and (max-width: 1024px) {
+    .tagline{
+      margin-left: 15%;
+      margin-top: 1%;
+    }
+  }
+  @media only screen and (max-width: 880px) {
+    .tagline{
+      margin-left: 17%;
+      margin-top: 1.4%;
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    .tagline{
+      margin-left: 19%;
+      margin-top: 1.6%;
+    }
+  }
   @media only screen and (max-width: 720px) {
     .centerLogo{
         width: 32%;
@@ -66,8 +101,31 @@ display: flex;
     left: 0;
     height: 30%;
     } 
+    .tagline{
+      font-size:80%;
+      margin-left: 15%;
+      margin-top: 1.6%;
+    }
   }
-
+  @media only screen and (max-width: 650px) {
+    .tagline{
+      margin-left: 16.5%;
+      margin-top: 1.9%;
+    }
+  }
+  @media only screen and (max-width: 570px) {
+    .tagline{
+      margin-left: 19%;
+      margin-top: 2.8%;
+    }
+  }
+  @media only screen and (max-width: 540px) {
+    .tagline{
+      font-size: 60%;
+      margin-left: 18%;
+      margin-top: 2.5%;
+    }
+  }
   @media only screen and (max-width: 455px) {
     .centerLogo{
         width: 32%;
@@ -79,5 +137,26 @@ display: flex;
     } 
     .mainLogo{
       padding: 2% 0 4% 0;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .tagline{
+      font-size: 60%;
+      margin-left: 19%;
+      margin-top: 3%;
+    }
+  }
+  @media only screen and (max-width: 445px) {
+    .tagline{
+      font-size: 50%;
+      margin-left: 18%;
+      margin-top: 2.5%;
+    }
+  }
+  @media only screen and (max-width: 385px) {
+    .tagline{
+      font-size: 50%;
+      margin-left: 27%;
+      margin-top: 2.5%;
     }
   }
