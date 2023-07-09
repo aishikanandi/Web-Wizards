@@ -1,20 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
-* {
+/* * {
 	padding-top: 0.3%;
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Titillium Web", sans-serif;
-}
+} */
 .logo {
-    margin-top: 3%;
-    margin-right: 20%;
+    margin-top: 1%;
     display: flex;
     align-items: center;
-    height: 100%; /* Ensure the parent element has a height */
+    height: 100%; 
   }
 .logo img{
-    height: 150%;
+    height: 100%;
     width: auto;
 }
 :root {
@@ -25,16 +24,18 @@
 header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between; /* Align items on both sides */
+	justify-content: space-between; 
 	height: 80px;
 	padding: 0 2rem;
 	color: var(--textColor);
+
 }
 
 header .nav-items{
-    margin-left: auto;
   display: flex;
-  align-items: center;
+	align-items: center;
+	justify-content: space-between; 
+  
 }
 
 nav {
@@ -43,7 +44,7 @@ nav {
 }
 
 nav a {
-	margin: 0 3rem;
+	margin: 0 2rem;
 	color: var(--textColor);
 	text-decoration: none;
     font-weight: bolder;
@@ -74,7 +75,7 @@ header .nav-btn {
 
 	header nav {
 		position: fixed;
-		top: -80vh;
+		top: -120vh;
 		left: 0;
 		height: 60%;
 		width: 100%;
@@ -83,13 +84,13 @@ header .nav-btn {
 		align-items: center;
 		justify-content: center;
 		gap: 0.5rem;
-		background-color: rgba(31, 81, 128, 0.3);
+		background-color: rgba(31, 81, 128, 0.6);
 		transition: 1s;
 	}
 
 	header .responsive_nav {
-
-		transform: translateY(80vh);
+		z-index: 1002;
+		transform: translateY(120vh);
 	}
 
 	nav .nav-close-btn {
@@ -106,4 +107,17 @@ header .nav-btn {
         font-weight: bolder;
 	}
     
+}
+@media only screen and (max-width: 720px) {
+	.logo img{
+		height: 50%;
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 455px) {
+	.logo img{
+		height: 41%;
+		width: auto;
+	}
 }
