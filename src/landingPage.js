@@ -3,20 +3,23 @@ import React from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import WaterText from "./waterText";
+import Waves from "./waves";
 
 function LandingPage() {
   return (
     <React.Fragment className="landingPage">
-      <div className="waveUp" />
+       <div className="waveUp" />
       <Navbar className="navBar" />
       <div className="mainLogo"><img
         className="centerLogo"
         alt=""
         src="openlakelogo.svg"
       ></img></div>
-	  <WaterText/>
-     <Footer className="footer" /> 
-     </React.Fragment>
+	  <WaterText/> 
+    <Waves />
+      <Footer className="footer" />  
+     
+    </React.Fragment> 
   );
 }
 

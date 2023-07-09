@@ -1,11 +1,11 @@
 .waveUp{
-    position: fixed;
+    position: absolute;
     top: -7%;
     left: 0;
     height: 50vh;
     width: 100%;
-    background-image: url("../public/BG-DESIGN.svg   ");  /* Replace with the path to your background image */
-    background-size: cover;
+    background-image: url("../public/BG-DESIGN2.svg"); /* Replace with the path to your background image */
+    background-size:cover;
     background-position: center;
     z-index: -1;
 }

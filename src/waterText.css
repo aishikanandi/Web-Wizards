@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 .waterTextDiv{
-    margin: 0;
-    padding-bottom: 7%;
+    padding-bottom: 9%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,12 +27,13 @@
 
 @keyframes animate{
     0%, 100%{
-        clip-path: polygon(0% 57%, 9% 47%, 33% 53%, 45% 58%, 60% 61%, 72% 57%, 86% 50%, 95% 45%, 100% 42%, 99% 99%, 0% 100%);
-
+        clip-path: polygon(0% 42%, 13% 47%, 29% 60%, 43% 60%, 59% 56%, 70% 50%, 82% 37%, 94% 34%, 100% 40%, 100% 90%, 0% 95%);
+ 
     }
     50%{
-        clip-path: polygon(0% 42%, 13% 47%, 29% 60%, 43% 60%, 59% 56%, 70% 50%, 82% 37%, 94% 34%, 100% 40%, 100% 99%, 0% 100%);
-    }
+        clip-path: polygon(0% 57%, 9% 47%, 33% 53%, 45% 58%, 60% 61%, 72% 57%, 86% 50%, 95% 45%, 100% 42%, 99% 99%, 0% 100%);
+
+            }
 } 
 
 @media only screen and (max-width: 1350px) {
@@ -48,6 +48,6 @@
  @media only screen and (max-width: 720px) {
     .waterTextDiv p{font-size: 500%;}
  }
- @media only screen and (max-width: 455px) {
-    .waterTextDiv p{font-size: 780%;}
+ @media only screen and (max-width: 540px) {
+    .waterTextDiv p{font-size: 350%; padding-top: 5%;}
  }
