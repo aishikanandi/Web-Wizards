@@ -1,4 +1,5 @@
 import "./landingPage.css";
+import './components/waterText.css'
 import React from "react";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
