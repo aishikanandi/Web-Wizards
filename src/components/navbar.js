@@ -18,9 +18,9 @@ function Navbar() {
             </div>
             <div class="nav-items">
 			<nav ref={navRef}>
-				<a href="/#">Home</a>
-				<a href="/#">Projects</a>
-				<a href="/#">Programs</a>
+				<a href="/">Home</a>
+				<a href="/projects">Projects</a>
+				<a href="/programtimeline">Programs</a>
 				<a href="/#">Community</a>
                 <a href="/#">Blogs</a>
                 <a href="/#">Subscription</a>

@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 const programs = [
     {
         "id": 1,
-        "name": "",
+        "name": "TBA",
         "date": "15th September, 2023",
         "host": "Tushar Bansal",
         "description": ""
@@ -20,21 +20,21 @@ const programs = [
         "name": "Webwave",
         "date": "1st July, 2023 ",
         "host": "Aditya Dubey and Arnav Prakash",
-        "description": "Create a website for Openlake club."
+        "description": "An exhilarating hackathon dedicated to crafting a cutting-edge website that embodies the very essence of Openlake"
     },
     {
         "id": 3,
         "name": "FOSS Overflow",
         "date": "27th November, 2023",
         "host": "Satvik Vemuganti",
-        "description": "Building open source softwares for use within the institute."
+        "description": "An intense but carefully designed program to prepare you for a career in Open Source. Building open source softwares for use within the institute."
     },
     {
         "id": 4,
         "name": "Zapricorn",
         "date": "6th November, 2023",
         "host": "Satvik Vemuganti",
-        "description": "Building an Insti-app for IIT Bhilai."
+        "description": "Building an Insti-app for IIT Bhilai. The vision is for a final product that can be adapted to all educational institutions across the country."
     }
 ]
 function ProgramTimeline(){
@@ -111,7 +111,7 @@ function ProgramTimeline(){
                 <div className='program-big-box'>
                   <h2>{program.name}</h2>
                   <div className='program-small-box'>
-                    <p>Host - {program.host} <br /> {program.description}</p>
+                    <p className='hostName'>Host: {program.host} </p><p className='programDescription'> {program.description}</p>
                     <button className='program-details' onClick={() => {
                     handleclick(program);
                   }}>KNOW MORE <FontAwesomeIcon icon={faSquareArrowUpRight} /> 
