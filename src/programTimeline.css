@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 *{
     margin: 0;
 }
@@ -12,7 +14,7 @@
     padding: 0;
 }
 
-.container{
+.programs-container{
     display: flex;
     align-items: center;
     padding: 2rem;
@@ -22,25 +24,25 @@
     height: 100%;
 }
 
-.top-section{
+.programs-heading{
     font-size: 375%;
     padding: 4rem 0;
     max-width: 144.84%;
     text-align: center;
-    margin: -125rem 0 0 0;
+    margin: -110rem 0 0 0;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
 @media (max-width: 1150px) {
-    .top-section {
+    .programs-heading {
         text-align: center;
         left: 0;
         right: 0;
         transform: none;
     }
-    .container {
+    .programs-container {
         justify-content: center;
       }
     
@@ -60,24 +62,24 @@
         transform: translateX(0) !important;
       }
     
-      .section:nth-child(even) .date {
+      .section:nth-child(even) .program-date {
         transform: none !important;
       }
 
-      .section:nth-child(odd) .date {
+      .section:nth-child(odd) .program-date {
         transform: translateX(0);
       }
     
-      .section .content,
-      .section .date {
+      .section .program-content,
+      .section .program-date {
         text-align: center;
       }
 
-      .section:nth-child(odd) .content{
+      .section:nth-child(odd) .program-content{
         margin-left: 60%;
       }
       
-      .section .date{
+      .section .program-date{
         margin-right: auto;
         margin-left: unset;
       }
@@ -132,12 +134,12 @@
     border-radius: 1rem;
 }
 
-.section:nth-child(even) .date{
+.section:nth-child(even) .program-date{
     transform: translateX(-100%);
     margin-left: 50%;
 }
 
-.section:nth-child(odd) .date{
+.section:nth-child(odd) .program-date{
     transform: translateX(100%);
     margin-right: 50%; 
 }
@@ -150,11 +152,11 @@
     transform: translateX(-100%);
 }
 
-.section:nth-child(even) .content {
+.section:nth-child(even) .program-content {
     margin-left: 37rem;
   }
 
-.bead{
+.program-bead{
     position: absolute;
     display: block;
     height: 1rem;
@@ -168,7 +170,7 @@
     z-index: 2;
 }  
 
-.content{
+.program-content{
     width: calc(50% - 2rem);
 }
 
@@ -177,7 +179,7 @@
     opacity: 1;
 }
 
-.big-box{
+.program-big-box{
     display: grid;
     grid-template-rows: auto 1fr;
     font-size: 2.25rem;
@@ -188,7 +190,7 @@
     padding: 2.16% 0 0 ;
 }
 
-.small-box{
+.program-small-box{
     display: grid;
     grid-template-rows: 1fr auto;
     border-radius: 5.26%;
@@ -204,7 +206,7 @@
     padding: 2.5%;
 }
 
-.detailsButton{
+.program-details{
     color: #0C1B2A;
     font-size: 1.5rem;
     border-radius: 3.25rem;
@@ -214,10 +216,15 @@
     font-weight: 700;
     font-style: normal;
     line-height: normal;
-    width: 50%;
+    width: 55%;
 }
 
-.date{
+.program-date{
     font-size: 2rem;
     font-weight: 500;
+}
+
+.program-link{
+    text-decoration: none;
+    color: #0C1B2A;
 }
