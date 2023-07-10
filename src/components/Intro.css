@@ -233,7 +233,7 @@
         padding: 3%;
       }
   }
-  @media screen and (max-width: 495px){
+  @media screen and (max-width: 500px){
     .intro-connect-top h2{
         font-size:1.4rem; line-height: 50%;
     }
@@ -311,7 +311,7 @@
 
   .rocket{
     position: absolute;
-    bottom: -246%;
+    bottom: -257%;
     z-index: 10005;
     width: 100%;
   }
@@ -405,7 +405,7 @@
   }
   @media screen and (max-width: 637px){
     .rocket{
-      bottom: -69%;
+      bottom: -65%;
     }
   }
   @media screen and (max-width: 615px){
@@ -418,7 +418,7 @@
       bottom: -55%;
     }
   }
-  @media screen and (max-width: 565px){
+  @media screen and (max-width: 577px){
     .rocket{
       bottom: -49%;
     }
@@ -437,6 +437,10 @@
     .rocket{
       bottom: -43%;
     }
+  }@media screen and (max-width: 541px){
+    .rocket{
+      bottom: -40%;
+    }
   }
   @media screen and (max-width: 531px){
     .rocket{
@@ -450,6 +454,10 @@
   }@media screen and (max-width: 465px){
     .rocket{
       bottom: -67%;
+    }
+  }@media screen and (max-width: 449px){
+    .rocket{
+      bottom: -65%;
     }
   }@media screen and (max-width: 439px){
     .rocket{
@@ -465,7 +473,11 @@
     }
   }@media screen and (max-width: 383px){
     .rocket{
-      bottom: -40%;
+      bottom: -43%;
+    }
+  }@media screen and (max-width: 367px){
+    .rocket{
+      bottom: -41%;
     }
   }@media screen and (max-width: 343px){
     .rocket{
