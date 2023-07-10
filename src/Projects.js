@@ -7,6 +7,7 @@ import { ReactComponent as ListOfProjectsImage } from './ProjectPageElements/LIS
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import "./landingPage.css";
+import Carousel from "./components/CarouselApp";
 
 function Projects() {
   return (
@@ -17,9 +18,7 @@ function Projects() {
 <div>
   <TitleImage className="title-image" alt="title" />
 </div>
-<div className="list-of-image-container">
-  <ListOfProjectsImage className="list-of-projects-image" alt="list" />
-</div>
+      <Carousel/>
       <div  className="display_cards_projectpage">
         <RenderProjectCards />
       </div>
