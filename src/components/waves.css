@@ -23,6 +23,7 @@
     height: 100px;
     background: url('../newWave.svg'); 
     background-size: 1000px 100px;
+    animation: animateTranslate 4s ease-in-out infinite;
     animation-delay:calc(var(--i)* 0.25s);
 }
 
