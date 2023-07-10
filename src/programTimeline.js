@@ -1,11 +1,11 @@
 import React,{useEffect} from 'react';
 import './programTimeline.css';
-import Navbar from "./navbar";
-import Footer from "./footer";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import './landingPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons';
-
+import { useNavigate } from "react-router-dom";
 
 const programs = [
     {
@@ -50,7 +50,6 @@ function ProgramTimeline(){
           up = scrollY < prevScrollY;
           down = !up;
           const timelineRect = timeline.getBoundingClientRect();
-          const lineRect = line.getBoundingClientRect();
           const dist = targetY - timelineRect.top;
     
           if (down && !full) {
@@ -85,30 +84,37 @@ function ProgramTimeline(){
           window.removeEventListener('scroll', scrollHandler);
         };
       }, []);
+      const nav = useNavigate();
+      function handleclick(program){
+        console.log(program);
+        nav("/programtimeline/program", { state: { results: program } });
+      }
     return(
         <div className = "programTimeline">
             <div className="waveUp" />
             <Navbar className="navBar" />
-            <div className='container'>
-            <div className='top-section'>
-                <h1 className='heading'>PROGRAMS</h1>
+            <div className='programs-container'>
+            <div className='programs-heading'>
+                <h1>PROGRAMS</h1>
             </div>
             <div className='timeline'>
                 <div className='line'></div>
                 {programs.map((program) => (
             <div className='section' key={program.id}>
-              <div className='bead'>
+              <div className='program-bead'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                   <circle cx="17" cy="17" r="17" transform="rotate(90 17 17)" fill="#FFFDFD" />
                 </svg>
               </div>
-              <div className='date'>{program.date}</div>
-              <div className='content'>
-                <div className='big-box'>
+              <div className='program-date'>{program.date}</div>
+              <div className='program-content'>
+                <div className='program-big-box'>
                   <h2>{program.name}</h2>
-                  <div className='small-box'>
+                  <div className='program-small-box'>
                     <p>Host - {program.host} <br /> {program.description}</p>
-                    <button className='detailsButton'>KNOW MORE <FontAwesomeIcon icon={faSquareArrowUpRight} />
+                    <button className='program-details' onClick={() => {
+                    handleclick(program);
+                  }}>KNOW MORE <FontAwesomeIcon icon={faSquareArrowUpRight} /> 
                     </button>
                   </div>
                 </div>
