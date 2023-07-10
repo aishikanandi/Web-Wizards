@@ -50,7 +50,6 @@ function ProgramTimeline(){
           up = scrollY < prevScrollY;
           down = !up;
           const timelineRect = timeline.getBoundingClientRect();
-          const lineRect = line.getBoundingClientRect();
           const dist = targetY - timelineRect.top;
     
           if (down && !full) {
