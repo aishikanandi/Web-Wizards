@@ -279,7 +279,7 @@
 
   .rocket{
     position: absolute;
-    bottom: -257%;
+    bottom: -260%;
     z-index: 10005;
     width: 100%;
   }

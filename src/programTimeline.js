@@ -90,9 +90,10 @@ function ProgramTimeline(){
         nav("/programtimeline/program", { state: { results: program } });
       }
     return(
+      <><Navbar className="navBar" />
         <div className = "programTimeline">
             <div className="waveUp" />
-            <Navbar className="navBar" />
+            
             <div className='programs-container'>
             <div className='programs-heading'>
                 <h1>PROGRAMS</h1>
@@ -124,7 +125,7 @@ function ProgramTimeline(){
             </div>
             </div>
             <Footer className="footer" />
-        </div>
+        </div></>
     );
 }
 
