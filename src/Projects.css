@@ -1,0 +1,229 @@
+body {
+    background: linear-gradient(to top, #1f5180, #092f41, #0F2027);
+    background-size: cover;
+  }
+
+  .waveUpProjectspage{
+    position: absolute;
+    top: -7%;
+    left: 0;
+    height: 60vh;
+    width: 100%;
+    background-image: url("./ProjectPageElements/BG-DESIGN (1)projectpage.svg"); /* Replace with the path to your background image */
+    background-size:cover;
+    background-position: center;
+    z-index: -1;
+}
+  
+  .display_cards_projectpage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .projects-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .title-image {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7%
+  }
+
+  .list-of-image-container{
+   margin-top: 26%;
+  
+    
+  }
+  
+  .list-of-projects-image {
+    position: relative;
+    top: 0;
+    left: 7%;
+  }
+ 
+  
+  .cardprojectpage{
+    position: relative;
+    width: 100%;
+    background: #0C1B2A;
+    box-shadow: -6px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+  }
+  
+  .screenshotprojectpage{
+    
+    margin-top: -1%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .project-name {
+    color: #FCFDFD;
+    font-family: Montserrat, Malgun Gothic, Ariel;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 7px;
+    margin-left: 6px;
+  }
+  
+  .project-description {
+    color: #93A4B2;
+    font-family: Malgun Gothic, Montserrat, Ariel;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-left: 27px;
+  }
+  
+  .learn-more-button {
+    margin-right: -20px;
+  }
+  
+  .button-container {
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+  }
+  
+  .background-card {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #016DAE;
+    transform: rotate(-2.7deg);
+    z-index: 1;
+  }
+  
+  .project-card {
+    position: relative;
+    margin: 60px;
+    width: 25%;
+  }
+  
+  .all-projects-container {
+    position: relative;
+    margin-top: 45%;
+    display: flex;
+    justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  
+
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    .title-image {
+        width: 40%;  
+      } 
+      .waveUpProjectspage{
+        height: 40vh;
+      }
+      .list-of-projects-image {
+        width: 30%;
+      }
+      .project-card {
+        width: 30%;
+        margin-right: 15px;
+      }
+      .project-name {
+        font-size: 30px;
+
+      }
+      .project-description {
+        font-size: 14px;
+        margin-left: 11px;
+      }
+      .learn-more-button {
+        margin-right: -20px;
+        width: 200px;
+      }
+
+      
+} 
+
+@media only screen and (max-width: 720px) {
+    .title-image {
+        width: 40%; 
+        margin-top: 3% 
+      }
+      .waveUpProjectspage{
+        top: -2%;
+      left: 0;
+      height: 30%;
+      }
+      .list-of-projects-image {
+        width: 25%;
+        margin-top: -10%
+        
+      }
+      .project-card {
+        width: 27%;
+        margin: 17px;
+      }
+      .project-name {
+        font-size: 20px;
+
+      }
+      .project-description {
+        font-size: 12px;
+        margin-left: 7px;
+      }
+      .learn-more-button {
+        margin-right: -10px;
+        width: 100px;
+        
+      }
+      .all-projects-container {
+        margin-top:50%;
+      }
+  
+  
+
+
+  }
+
+  @media only screen and (max-width: 455px) {
+    .title-image {
+        width: 40%; 
+        margin-top: -5% 
+      }
+      .waveUpProjectspage{
+        top: -8%;
+      left: 0;
+      height: 30%;
+      }
+      .project-card {
+        width: 20%;
+        margin: 10px;
+      }
+      .project-name {
+        font-size: 10px;
+        margin-top: -6px;
+
+      }
+      .project-description {
+        font-size: 4px;
+        margin-left: 3px;
+      }
+      .learn-more-button {
+        width: 50px; 
+        margin-top: -59%;
+        margin-right: 45%; 
+      }
+      .button-container {
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        height: 10px;
+      }
+}
+  
