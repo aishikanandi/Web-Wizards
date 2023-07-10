@@ -5,7 +5,7 @@ import Footer from "./components/footer";
 import './landingPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons';
-
+import { useNavigate } from "react-router-dom";
 
 const programs = [
     {
@@ -84,6 +84,11 @@ function ProgramTimeline(){
           window.removeEventListener('scroll', scrollHandler);
         };
       }, []);
+      const nav = useNavigate();
+      function handleclick(program){
+        console.log(program);
+        nav("/programtimeline/program", { state: { results: program } });
+      }
     return(
         <div className = "programTimeline">
             <div className="waveUp" />
@@ -107,7 +112,9 @@ function ProgramTimeline(){
                   <h2>{program.name}</h2>
                   <div className='program-small-box'>
                     <p>Host - {program.host} <br /> {program.description}</p>
-                    <button className='program-details'>KNOW MORE <FontAwesomeIcon icon={faSquareArrowUpRight} />
+                    <button className='program-details' onClick={() => {
+                    handleclick(program);
+                  }}>KNOW MORE <FontAwesomeIcon icon={faSquareArrowUpRight} /> 
                     </button>
                   </div>
                 </div>
