@@ -1,6 +1,6 @@
 .intro-container {
     padding-top: 5% !important;
-    padding-bottom: 38% !important;margin-bottom: 10%;
+    padding-bottom: 70% !important;margin-bottom: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,7 +97,7 @@
         margin-left: 12%;
       }
       .intro-container{
-        padding: 5% 0 36% 0 !important;
+        padding-bottom: 80% !important;
       }
   }
 
@@ -113,10 +113,10 @@
       }
       .intro-para p{
         font-size: 1rem;
+      }.intro-container{
+        padding-bottom: 80% !important;
       }
-      .intro-container{
-        padding: 5% 0 38% 0 !important;
-      }
+
       .intro-para{
         padding-top: 1%;
       }
@@ -139,7 +139,12 @@
       }
       .intro-para p{
         font-size: 1rem;
+      }.intro-container{
+        padding-bottom: 70% !important;
+      }.rocket{
+        top: 70% !important;
       }
+
   }
 
   @media screen and (max-width: 840px){
@@ -166,6 +171,10 @@
       .intro-connect-bottom img{
         width: 70%;
         margin-left: 9%;
+      }.intro-container{
+        padding-bottom: 70% !important;
+      }.rocket{
+        top: 65% !important;
       }
   }
 
@@ -207,7 +216,7 @@
         padding: 3%;
       }
   }
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 560px){
     .intro-connect-top h2{
         font-size:1.4rem; line-height: 50%;
     }
@@ -246,10 +255,14 @@
         margin-right: 5% !important;
       }.intro-connect{
         padding: 7%;
+      }.intro-container{
+        padding-bottom: 50% !important;
+      }.rocket{
+        top: 95% !important;
       }
   }
 
-  @media screen and (max-width: 381px){
+  @media screen and (max-width: 389px){
     .intro-connect-top h2{
       font-size:1.2rem; line-height: 50%;
   }
@@ -273,18 +286,30 @@
         width: 85%;
         padding-top: 10%;
         
+      }.intro-container{
+        padding-bottom: 50% !important;
+      }.rocket{
+        top: 85% !important;
+      }
+   
+  }
+  @media screen and (max-width: 325px){
+  .intro-container{
+        padding-bottom: 70% !important;
+      }.rocket{
+        top: 85% !important;
       }
    
   }
 
-  .rocket{
+  .rocket {
     position: absolute;
-    bottom: -257%;
-    z-index: 10005;
+    top: 85%;
+    z-index: 10010;
     width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0 78%);
   }
-
-  @media screen and (max-width: 1550px){
+  /* @media screen and (max-width: 1550px){
     .rocket{
       bottom: -230%;
     }
@@ -296,7 +321,7 @@
   }
   @media screen and (max-width: 1397px){
     .rocket{
-      bottom: -200%;
+      bottom: -220% !important;
     }
     .intro-container {
         padding-bottom: 30%;
@@ -314,13 +339,13 @@
   }
   @media screen and (max-width: 1249px){
     .rocket{
-      bottom: -175%;
+      bottom: -165% !important;
     }
   }
 
   @media screen and (max-width: 1175px){
     .rocket{
-      bottom: -165%;
+      bottom: -155%;
     }
   }
   @media screen and (max-width: 1115px){
@@ -459,4 +484,4 @@
     .rocket{
       bottom: -32%;
     }
-  }
+  } */

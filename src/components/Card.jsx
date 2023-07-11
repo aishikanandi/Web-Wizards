@@ -2,7 +2,7 @@ import Styles from "./Card.module.css";
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 
-function Card({ imagen }) {
+function Card({ imagen, name, description }) {
   const [show, setShown] = useState(false);
 
   const props3 = useSpring({
@@ -19,11 +19,9 @@ function Card({ imagen }) {
       onMouseLeave={() => setShown(false)}
     >
    <img src={imagen} alt="" />
-      <h2>Title</h2>
+      <h2>{name}</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
+        {description}
       </p>
     </animated.div>
   );

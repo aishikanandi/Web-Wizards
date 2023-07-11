@@ -22,7 +22,7 @@ function LandingPage() {
     <div className="tagline"><h2>Embrace the waves of Open Source!</h2></div>
     <Waves />
     <Intro />
-    <Carousel/>
+    <div className="landingpaagecarousel"><Carousel/></div>
     <Footer className="footer" />   
     </React.Fragment> 
   );

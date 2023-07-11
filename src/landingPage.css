@@ -11,6 +11,24 @@
     background-position: center;
     z-index: -1;
 }
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+.landingpaagecarousel{
+  padding-top: 28%!important;
+  padding-bottom: 4%;
+  background-color: #092f41;
+}
+
 .navBar{
     position: fixed;
     top: 0;
@@ -114,6 +132,11 @@ display: flex;
     .tagline{
       margin-left: 18.5%;
       margin-top: 2%;
+    }
+    .landingpaagecarousel{
+      padding-top: 38%!important;
+      padding-bottom: 2%;
+      background-color: #092f41;
     }
   }
   @media only screen and (max-width: 570px) {

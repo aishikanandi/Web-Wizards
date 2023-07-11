@@ -5,8 +5,8 @@ function waterText() {
   return (
     <div className='waterTextDiv'>
       <div className='content2' >
-        <p>OpenLake</p>
-        <p>OpenLake</p>
+        <p className='neon'>OpenLake</p>
+        {/* <p>OpenLake</p> */}
     </div>
     </div>
   )
