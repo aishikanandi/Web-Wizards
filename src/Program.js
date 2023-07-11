@@ -4,7 +4,7 @@ import './Program.css';
 import './landingPage.css';
 import React,{useEffect} from 'react';
 import { useLocation } from "react-router-dom";
-import Carousel from "./components/CarouselApp.js";
+import Carousel from "./components/CarouselWithoutText.js";
 
 function Program(){
     const location = useLocation();

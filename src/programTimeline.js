@@ -122,7 +122,7 @@ function ProgramTimeline(){
                 <div className='program-big-box'>
                   <h2>{program.name}</h2>
                   <div className='program-small-box'>
-                    <p>Host - {program.host} <br /> {program.description}</p>
+                    <p>Host - {program.host} <br /> {truncateDescription(program.description)}</p>
                     <button className='program-details' onClick={() => {
                     handleclick(program);
                   }}>KNOW MORE <FontAwesomeIcon icon={faSquareArrowUpRight} /> 
