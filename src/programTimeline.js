@@ -13,28 +13,32 @@ const programs = [
         "name": "",
         "date": "15th September, 2023",
         "host": "Tushar Bansal",
-        "description": ""
+        "description": "",
+        "poster": ""
     },
     {
         "id": 2,
         "name": "Webwave",
         "date": "1st July, 2023 ",
         "host": "Aditya Dubey and Arnav Prakash",
-        "description": "Create a website for Openlake club."
+        "description": "Join us for an exhilarating hackathon dedicated to crafting a cutting-edge website that embodies the very essence of Openlake! This immersive event invites you to unleash your creativity and technical prowess as we strive to develop a user-friendly, lightning-fast, and visually stunning website. Participants must form teams consisting of 2-5 members for the competition. The competition is structured into two rounds, with each team undergoing evaluation at the conclusion of each round. Apply Now.",
+        "poster": "webwave.jpeg"
     },
     {
         "id": 3,
         "name": "FOSS Overflow",
         "date": "27th November, 2023",
         "host": "Satvik Vemuganti",
-        "description": "Building open source softwares for use within the institute."
+        "description": "It is FOSS OverFlow time and we are back with an intense but carefully designed program to prepare you for a career in Open Source. This time we have planned for the full GSoC experience. For the coming iteration of FOSS Overflow, we are all about building Open Source Software for use within the institute while showing the trend for universities across the country. Each selected student shall have access to a mentor for 4 weeks and get hands-on experience contributing to FOSS.",
+        "poster": "FOSS_Overflow.png"
     },
     {
         "id": 4,
-        "name": "Zapricorn",
+        "name": "Zapricon",
         "date": "6th November, 2023",
         "host": "Satvik Vemuganti",
-        "description": "Building an Insti-app for IIT Bhilai."
+        "description": "It's that time of the year. For Meraz this year, we bring to you a hackathon where the stakes couldn't be bigger. Starting Tuesday, you're tasked with building an Insti-app for IIT Bhilai. Using the winning app as a base, OpenLake will maintain an Open Source Project taking the best ideas from all submissions. The vision is for a final product that can be adapted to all educational institutions across the country.",
+        "poster": "Zapricon.png"
     }
 ]
 function ProgramTimeline(){
@@ -89,6 +93,12 @@ function ProgramTimeline(){
         console.log(program);
         nav("/programtimeline/program", { state: { results: program } });
       }
+      function truncateDescription(description) {
+        if (description.length > 50) {
+          return description.substring(0, 70) + "...";
+        }
+        return description;
+      }
     return(
         <div className = "programTimeline">
             <div className="waveUp" />
@@ -111,7 +121,7 @@ function ProgramTimeline(){
                 <div className='program-big-box'>
                   <h2>{program.name}</h2>
                   <div className='program-small-box'>
-                    <p>Host - {program.host} <br /> {program.description}</p>
+                    <p>Host - {program.host} <br /> {truncateDescription(program.description)}</p>
                     <button className='program-details' onClick={() => {
                     handleclick(program);
                   }}>KNOW MORE <FontAwesomeIcon icon={faSquareArrowUpRight} /> 
