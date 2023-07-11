@@ -102,9 +102,6 @@
   }
 
   @media screen and (max-width: 1125px){
-    .intro-connect-top h2{
-        font-size:1.2rem;
-    }
     .second{
         font-size:1.6rem !important;
       }
@@ -116,10 +113,6 @@
       }
       .intro-para p{
         font-size: 1rem;
-      }
-      .intro-connect-bottom img{
-        width: 70%;
-        margin-left: 12%;
       }
       .intro-container{
         padding: 5% 0 38% 0 !important;
@@ -147,10 +140,6 @@
       .intro-para p{
         font-size: 1rem;
       }
-      .intro-connect-bottom img{
-        width: 70%;
-        margin-left: 12%;
-      }
   }
 
   @media screen and (max-width: 840px){
@@ -164,7 +153,6 @@
         font-size:2rem !important;
       }
       .intro-info{
-        margin-left: 8%;
         flex: 15% !important; 
         padding: 2%;
       }
@@ -182,12 +170,6 @@
   }
 
   @media screen and (max-width: 625px){
-    .intro-connect-top h2{
-        font-size:1.2rem; line-height: 50%;
-    }
-    .second{
-        font-size:1.4rem !important;
-      }
       .third{
         font-size:1.8rem !important;
       }
@@ -198,10 +180,6 @@
       }
       .intro-para p{
         font-size: 0.9rem;
-      }
-      .intro-connect-bottom img{
-        width: 70%;
-        margin-left: 9%;
       }
       .intro-connect{
         padding: 3%;
@@ -224,10 +202,6 @@
       }
       .intro-para p{
         font-size: 0.9rem;
-      }
-      .intro-connect-bottom img{
-        width: 70%;
-        margin-left: 9%;
       }
       .intro-connect{
         padding: 3%;
@@ -276,37 +250,31 @@
   }
 
   @media screen and (max-width: 381px){
-
-      .intro-info{
-        flex: 15% !important; 
-        padding-right: 4% !important;
-      }
+    .intro-connect-top h2{
+      font-size:1.2rem; line-height: 50%;
+  }
+  .second{
+      font-size:1.4rem !important;
+    }
+    .third{
+      font-size:1.8rem !important;
+    }
       .intro-info h1{
         font-size:1.3rem;
         line-height: 35%;
       }
       .intro-para p{
         font-size: 0.9rem;
-        padding-right: 4% !important;
-      }
-      .intro-connect-bottom img{
-        width: 85%;
-        margin-left: 12%;
-        
       }
       .intro-info{
         padding: 7% 0 !important;
       }
-    .intro-container{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        margin-top:0.5%;
-    }.intro-info{
-        margin-right: 5% !important;
-      }.intro-connect{
-        padding: 7%;
+      .intro-connect-bottom img{
+        width: 85%;
+        padding-top: 10%;
+        
       }
+   
   }
 
   .rocket{
