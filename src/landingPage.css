@@ -25,8 +25,7 @@
 }
 .landingpaagecarousel{
   padding-top: 28%!important;
-  padding-bottom: 4%;
-  background-color: #092f41;
+  padding-bottom: 12%;
 }
 
 .navBar{
@@ -42,13 +41,13 @@
     align-items: center;
     justify-content: center;
     color: rgb(167, 212, 243);
-    margin-left: 5%;
+    margin-left: 6%;
     margin-top: 0.4%;
   }
 .landingPage{
     display: flex;
     align-items: center;
-    
+    height: 100%;
 
 }
 
@@ -66,7 +65,7 @@ display: flex;
 
   @media only screen and (max-width: 1350px) {
     .mainLogo{
-      padding: 8% 6%;
+      padding: 8% 6.5%;
   }  
   .centerLogo{
       width: 28%;
@@ -74,13 +73,13 @@ display: flex;
   }
   @media only screen and (max-width: 1350px) {
     .tagline{
-      margin-left: 8%;
+      margin-left: 8.5%;
       margin-top: 1.4%;
     }
   }
   @media only screen and (max-width: 1110px) {
     .tagline{
-      margin-left: 8%;
+      margin-left: 8.5%;
       margin-top: 1.5%;
     }
   }
@@ -97,19 +96,19 @@ display: flex;
   }
   @media only screen and (max-width: 1024px) {
     .tagline{
-      margin-left: 17%;
+      margin-left: 17.5%;
       margin-top: 1.5%;
     }
   }
   @media only screen and (max-width: 880px) {
     .tagline{
-      margin-left: 19%;
+      margin-left: 19.5%;
       margin-top: 1.8%;
     }
   }
   @media only screen and (max-width: 760px) {
     .tagline{
-      margin-left: 22%;
+      margin-left: 22.5%;
       margin-top: 2%;
     }
   }
@@ -124,24 +123,23 @@ display: flex;
     } 
     .tagline{
       font-size:80%;
-      margin-left: 18%;
+      margin-left: 18.5%;
       margin-top: 1.8%;
     }
   }
   @media only screen and (max-width: 650px) {
     .tagline{
-      margin-left: 18.5%;
+      margin-left: 19%;
       margin-top: 2%;
     }
     .landingpaagecarousel{
       padding-top: 38%!important;
       padding-bottom: 2%;
-      background-color: #092f41;
     }
   }
   @media only screen and (max-width: 570px) {
     .tagline{
-      margin-left: 20%;
+      margin-left: 20.5%;
       margin-top: 2.8%;
     }
 
@@ -149,8 +147,20 @@ display: flex;
   @media only screen and (max-width: 540px) {
     .tagline{
       font-size: 60%;
-      margin-left: 20%;
+      margin-left: 20.5%;
       margin-top: 3%;
+    }
+    .landingpaagecarousel{
+      padding-top: 38%!important;
+      padding-bottom: 3%;
+
+    }
+    .neon {
+      color: #fff;
+      text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 40px #0ff,
     }
   }
   @media only screen and (max-width: 455px) {
@@ -165,32 +175,36 @@ display: flex;
     .mainLogo{
       padding: 2% 0 4% 0;
     }
+    .landingpaagecarousel{
+      padding-top: 45%!important;
+      padding-bottom: 4%;
+    }
   }
   @media only screen and (max-width: 480px) {
     .tagline{
       font-size: 60%;
-      margin-left: 20%;
+      margin-left: 20.5%;
       margin-top: 3.5%;
     }
   }
   @media only screen and (max-width: 445px) {
     .tagline{
       font-size: 50%;
-      margin-left: 20%;
+      margin-left: 20.5%;
       margin-top: 3.5%;
     }
   }
   @media only screen and (max-width: 385px) {
     .tagline{
       font-size: 50%;
-      margin-left: 29%;
+      margin-left: 29.5%;
       margin-top: 4%;
     }
   }
   @media only screen and (max-width: 320px) {
     .tagline{
       font-size: 50%;
-      margin-left: 33%;
+      margin-left: 33.5%;
       margin-top: 10.5%;
     }
     .mainLogo{

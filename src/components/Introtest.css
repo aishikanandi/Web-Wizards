@@ -1,0 +1,457 @@
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c79c5;
+    color: white;
+    height: 90rem !important;
+    margin-bottom: 35%;
+  }
+  
+  .intro-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding:0 0 0 8%;
+  }
+  
+  .intro-info {
+    flex: 1;
+    text-align: left;
+    margin-top: 15%;
+  }
+  
+  .intro-info h1 {
+    font-size: 350%;
+    margin-bottom: 1rem;
+    line-height: 100% !important;
+    color: black !important;
+    padding: auto;
+    font-family: Malgun Gothic, Montserrat, Ariel;
+  }
+  
+  .intro-info p {
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 150%;
+    font-family: Malgun Gothic, Montserrat, Ariel;
+  }
+  
+  .intro-para {
+    padding-top: 2%;
+  }
+  
+  .intro-connect {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 9%;
+  }
+  
+  .intro-connect-top {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+    font-family: Malgun Gothic, Montserrat, Ariel;
+
+  }
+  
+  .intro-connect-top h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    line-height: 70%;
+  }
+  
+  .intro-connect-bottom {
+    margin-top: 1rem;
+    margin-right: 6%;
+    width: 80%;
+    flex: 60%;
+  }
+  
+  .intro-connect-bottom svg {
+    width: 40px;
+    height: 40px;
+    stroke: currentColor;
+  }
+  
+  .second {
+    font-size: 2rem !important;
+  }
+  
+  .third {
+    font-size: 3rem !important;
+  }
+  
+  .rocketimg {
+    position: relative;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .rocket {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 10;
+  }
+  @media screen and (max-width: 1502px){
+    /* .intro-container{
+        height: ;
+    }
+    .intro-info{
+        margin-top: ;
+    } */
+    .rocket{
+        top:100%;
+    }
+  }  
+  @media screen and (max-width: 1300px){
+     .intro-container{
+        height: 80rem !important;
+    }
+    .intro-info{
+        margin-top: 10%;
+    } 
+    .intro-connect{
+        padding-top: 6%;
+    }
+    .rocket{
+        top:100%;
+    }
+    .intro-connect-top h2{
+        font-size:1.2rem;
+    }
+    .second{
+        font-size:1.7rem !important;
+      }
+      .third{
+        font-size:2.7rem !important;
+      }
+  } 
+  @media screen and (max-width: 1250px){
+    
+      .intro-info h1{
+        font-size:2.8rem;
+      }
+      .intro-para p{
+        font-size: 1.5rem;
+      }
+      .intro-connect-bottom img{
+        width: 85%;
+        margin-left: 12%;
+      }}
+
+  @media screen and (max-width: 1125px){
+    .second{
+        font-size:1.6rem !important;
+      }
+      .third{
+        font-size:2.5rem !important;
+      }
+      .intro-info h1{
+        font-size:2.2rem;
+      }
+      .intro-para p{
+        font-size: 1.2rem;
+      }
+      .intro-connect-bottom img{
+        width: 90%;
+        margin-left: 12%;
+      }
+      .intro-para{
+        padding-top: 1%;
+      }
+  }
+  @media screen and (max-width: 1110px){
+    .intro-container{
+       height: 80rem !important;
+   }
+   .intro-info{
+       margin-top: 3%;
+   } 
+   .intro-connect{
+       padding-top: 1%;
+   }
+   .rocket{
+       top:70%;
+   }
+   
+ } 
+  @media screen and (max-width: 980px){
+    .intro-connect-top h2{
+        font-size:1.2rem; line-height: 50%;
+    }
+    .second{
+        font-size:1.4rem !important;
+      }
+      .third{
+        font-size:2.3rem !important;
+      }
+      .intro-info{
+        margin-left: 2%;
+      }
+      .intro-info h1{
+        font-size:1.8rem;
+      }
+      .intro-para p{
+        font-size: 1rem;
+      }
+  }
+
+  @media screen and (max-width: 840px){
+    .intro-flex{
+        flex-direction: column;
+    }
+    .intro-connect-top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 7%;
+        line-height: 100%;
+    }
+    .intro-connect-top h2{
+        font-size:1.8rem; 
+        justify-content: center;
+        align-items: center;
+        line-height: 90% !important;
+
+    }
+    .second{
+        font-size:2.1rem !important;
+      }
+      .third{
+        font-size:2.7rem !important;
+      }
+      .intro-info{
+        flex: 15% !important; 
+        padding: 2%;
+      }
+      .intro-info{
+        margin-bottom: 6%;
+      }
+      .intro-info h1{
+        font-size:2.2rem;
+        line-height: 100%;
+      }
+      .intro-para p{
+        font-size: 1.3rem;
+      }
+      .intro-connect-bottom img{
+        width: 70%;
+        margin-left: 12%;
+      }
+      .rocket{
+        top:90%;
+    }
+  }
+  @media screen and (max-width: 786px){
+    .rocket{
+        top:85%;
+    }div.landingpaagecarousel{
+        padding-top: 10% !important;
+       }
+  }@media screen and (max-width: 720px){
+    .rocket{
+        top:80%;
+    }div.landingpaagecarousel{
+        padding-top: 10% !important;
+       }
+  }
+  @media screen and (max-width: 625px){
+      .third{
+        font-size:1.8rem !important;
+      }
+
+      .intro-info h1{
+        font-size:2rem;
+        line-height: 40%;
+      }
+      .intro-para p{
+        font-size: 1.2rem;
+      }
+      .intro-connect{
+        padding-top: 5% !important;
+      }
+      .rocket{
+        top:77% !important;
+    }.intro-info{
+        margin-bottom: 0;
+    }
+    .intro-container{
+        height: 70rem !important;
+    }.landingpaagecarousel{
+        padding-top: 20% !important;
+       }
+  }
+
+  @media screen and (max-width:576px){
+    .intro-connect-top h2{
+        font-size:1.4rem; 
+        justify-content: center;
+        align-items: center;
+        line-height: 90% !important;
+
+    }
+    .second{
+        font-size:2rem !important;
+      }
+      .third{
+        font-size:2.8rem !important;
+      }
+      .intro-info{
+        flex: 15% !important; 
+        padding: 2%;
+      }
+      .intro-info{
+        margin-bottom: 6% !important;
+        margin-right: 4%;
+      }
+      .intro-info h1{
+        font-size:2rem;
+        line-height: 100%;
+        margin: 0;
+      }
+      .intro-para p{
+        font-size: 1.3rem;
+      }
+      .intro-connect{
+        padding-top: 0 !important;
+      }
+      .intro-connect-bottom img{
+        width: 70%;
+        margin-left: 10%;
+      }
+      .rocket{
+        top:95% !important;
+    }div.landingpaagecarousel{
+        padding-top: 10% !important;
+       }
+  }
+  @media screen and (max-width: 560px){
+    .intro-connect-top h2{
+        font-size:1.4rem; line-height: 50%;
+    }
+    .second{
+        font-size:1.6rem !important;
+      }
+      .third{
+        font-size:2rem !important;
+      }
+      div.intro-info{
+        margin: 0 !important;
+      }
+      .intro-info h1{
+        font-size:1.6rem;
+        line-height: 35%;
+      }
+      .intro-para p{
+        font-size: 1.2rem;
+      }
+      .intro-connect-bottom img{
+        width: 90%;
+        margin-left: 7%;
+        
+      }
+      .intro-info{
+        padding: 7% 0 !important;
+      }
+    .intro-container{
+        height: 65rem !important;
+    }.intro-info{
+        margin: 7% !important;
+        margin-bottom: 4% !important;
+      }.intro-connect{
+        padding: 7%;
+      }.rocket{
+        top:58% !important;
+      }div.landingpaagecarousel{
+        padding-top: 0 !important;
+       }
+  }
+  @media screen and (max-width: 520px) {
+    .rocket{
+        top:55% !important;
+    }.intro-container{
+        height: 64.5rem !important;
+    }
+  }
+  @media screen and (max-width: 444px) {
+    .rocket{
+        top:62% !important;
+    }.intro-container{
+        height: 60rem !important;
+    } .intro-info h1{
+        font-size:1.3rem;
+        line-height: 35%;
+      }
+      .intro-para p{
+        font-size: 0.9rem;
+      }
+  }
+  
+  @media screen and (max-width: 389px){
+    .intro-connect-top h2{
+      font-size:1.2rem; line-height: 50%;
+  }
+  .second{
+      font-size:1.4rem !important;
+    }
+    .third{
+      font-size:1.8rem !important;
+    }
+      .intro-info h1{
+        font-size:1.3rem;
+        line-height: 35%;
+      }
+      .intro-para p{
+        font-size: 0.9rem;
+      }
+      .intro-info{
+        padding: 9% 0 !important;
+      }
+      .intro-connect-bottom img{
+        width: 90%;
+        margin-left: 5%;
+        
+      }.rocket{
+        top:70% !important;
+      }.intro-container{
+        height: 50rem !important;
+    }
+  }
+  @media screen and (max-width: 1300px){
+    .landingpaagecarousel{
+        padding-top: 15% !important;
+       }
+    
+  }
+  @media screen and (max-width: 1110px){
+    .landingpaagecarousel{
+        padding-top: 0% !important;
+       }
+    
+  }
+  @media screen and (max-width: 840px){
+    .landingpaagecarousel{
+        padding-top: 18% !important;
+       }
+    
+  }
+  @media screen and (max-width: 580px){
+    .landingpaagecarousel{
+        padding-top: 26% !important;
+       }
+    
+  }
+ 
+ 

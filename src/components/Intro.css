@@ -1,6 +1,6 @@
 .intro-container {
     padding-top: 5% !important;
-    padding-bottom: 70% !important;margin-bottom: 10%;
+    padding-bottom: 70% !important;margin-bottom: 13%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,14 +18,17 @@
   .intro-info h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    line-height: 70%;
+    line-height: 100% !important;
     color: black !important;
+    padding: auto;
+    font-family: Malgun Gothic, Montserrat, Ariel;
   }
   
   .intro-info p {
     font-size: 1.5rem;
     margin: 0;
     line-height: 150%;
+    font-family: Malgun Gothic, Montserrat, Ariel;
   }
   .intro-para{
     padding-top: 2%;
@@ -142,7 +145,7 @@
       }.intro-container{
         padding-bottom: 70% !important;
       }.rocket{
-        top: 70% !important;
+        top: 80% !important;
       }
 
   }
@@ -174,7 +177,7 @@
       }.intro-container{
         padding-bottom: 70% !important;
       }.rocket{
-        top: 65% !important;
+        top: 80% !important;
       }
   }
 
@@ -192,6 +195,8 @@
       }
       .intro-connect{
         padding: 3%;
+      }.rocket{
+        top: 70% !important;
       }
   }
 
@@ -258,10 +263,14 @@
       }.intro-container{
         padding-bottom: 50% !important;
       }.rocket{
-        top: 95% !important;
+        top: 105% !important;
       }
   }
-
+  @media screen and (max-width: 470px){
+    .rocket{
+      top: 105% !important;
+    }
+  }
   @media screen and (max-width: 389px){
     .intro-connect-top h2{
       font-size:1.2rem; line-height: 50%;
@@ -289,7 +298,7 @@
       }.intro-container{
         padding-bottom: 50% !important;
       }.rocket{
-        top: 85% !important;
+        top: 95% !important;
       }
    
   }
@@ -307,7 +316,6 @@
     top: 85%;
     z-index: 10010;
     width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 78%, 0 78%);
   }
   /* @media screen and (max-width: 1550px){
     .rocket{
