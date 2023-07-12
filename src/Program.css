@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.program{
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    font-style: normal;
+}
+
+.individual-program{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: 75%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.program-name{
+    font-size: 375%;
+    padding: 1rem 0;
+    font-family: "Montserrat";    
+    font-weight: 700;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.program-poster{
+    position: absolute;
+    width:  40.25rem;
+    height: 100%;
+    margin-top: 69rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.poster-rectangle-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(3.745deg);
+    flex-shrink: 0;
+    background: #0C1B2A;
+  }
+
+.poster-rectangle-2 {
+    flex-shrink: 0;
+    background: #DFEFF8;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+.poster-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+.poster-container img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.event-date-container{
+    font-family: "Nanum Gothic";
+    font-size: 225%;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 132rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.event-date{
+    font-weight: bold;
+}
+
+.program-description{
+    /* display: block; */
+    text-align: justify;
+    font-family: "Nanum Gothic";
+    font-size: 225%;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 160rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* display: flex; */
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 90%;
+}
+
+@media (min-width: 865px) and (max-width: 1233px) {
+    .program-name{
+        font-size: 262.5%;
+    }
+    .program-poster{
+        width:  28.175rem;
+        height: 70%;
+        margin-top: 47.5rem;
+    }
+    .event-date-container{
+        font-size: 157.5%;
+        margin-top: 92rem;
+    }
+    .program-description{
+        font-size: 157.5%;
+        margin-top: 115rem;
+    }
+}
+
+@media (min-width: 620px) and (max-width: 864px) {
+    .program-name{
+        font-size: 187.5%;
+        margin: -1rem 0;
+    }
+    .program-poster{
+        width:  20.125rem;
+        height: 50%;
+        margin-top: 32.5rem;
+    }
+    .event-date-container{
+        font-size: 112.5%;
+        margin-top: 64rem;
+    }
+    .program-description{
+        font-size: 112.5%;
+        margin-top: 78rem;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 620px) {
+    .program-name{
+        font-size: 112.5%;
+        margin: -2rem 0;
+    }
+    .program-poster{
+        width:  12.075rem;
+        height: 30%;
+        margin-top: 20rem;
+    }
+    .event-date-container{
+        font-size: 67.5%;
+        margin-top: 39rem;
+    }
+    .program-description{
+        font-size: 67.5%;
+        margin-top: 47rem; 
+    }
+}
+
+@media (max-width: 400px){
+    .program-name{
+        font-size: 75%;
+        margin: -2rem 0;
+    }
+    .program-poster{
+        width:  12.075rem;
+        height: 30%;
+        margin-top: 20rem;
+    }
+    .event-date-container{
+        font-size: 45%;
+        margin-top: 38rem;
+    }
+    .program-description{
+        font-size: 45%;
+        margin-top: 43rem;
+    }
+}
+
+@media (min-width: 1365px) and (max-width: 1572px) {
+    .program-description{
+        margin-top: 165rem;
+    }    
+    .individual-program{
+        padding-bottom: 92%;
+    }
+}
+
+@media (min-width: 1234px) and (max-width: 1365px) {
+    .program-description{
+        margin-top: 168rem;
+    }
+    .individual-program{
+        padding-bottom: 105%;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 500px) {
+    .individual-program{
+        padding-bottom: 85%;
+    }
+}
+
+@media (max-width: 420px) {
+    .individual-program{
+        padding-bottom: 112%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 620px) {
+    .individual-program{
+        padding-bottom: 70%;
+    }
+}
+
+@media (min-width: 621px) and (max-width: 750px) {
+    .individual-program{
+        padding-bottom: 87%;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 865px) {
+    .individual-program{
+        padding-bottom: 70%;
+    }
+}
+
+@media (min-width: 865px) and (max-width: 1000px) {
+    .individual-program{
+        padding-bottom: 97%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1233px) {
+    .individual-program{
+        padding-bottom: 82%;
+    }
+}
+
+
