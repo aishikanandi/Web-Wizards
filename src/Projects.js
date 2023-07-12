@@ -18,7 +18,7 @@ function Projects() {
 <div>
   <TitleImage className="title-image" alt="title" />
 </div>
-      <Carousel/>
+      <div className='inProjectPage'><Carousel /></div>
       <div  className="display_cards_projectpage">
         <RenderProjectCards />
       </div>
