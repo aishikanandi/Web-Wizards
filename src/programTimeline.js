@@ -13,7 +13,7 @@ const programs = [
         "name": "TBA",
         "date": "15th September, 2023",
         "host": "Tushar Bansal",
-        "description": "",
+        "description": "To be announced.",
         "poster": ""
     },
     {
