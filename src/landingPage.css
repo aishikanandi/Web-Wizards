@@ -25,7 +25,7 @@
 }
 .landingpaagecarousel{
   padding-top: 28%!important;
-  padding-bottom: 12%;
+  padding-bottom: 8%;
 }
 
 .navBar{
@@ -125,6 +125,8 @@ display: flex;
       font-size:80%;
       margin-left: 18.5%;
       margin-top: 1.8%;
+    }.MainPagePadding{
+      padding-bottom: 8%;
     }
   }
   @media only screen and (max-width: 650px) {
@@ -187,6 +189,7 @@ display: flex;
       margin-top: 3.5%;
     }
   }
+  
   @media only screen and (max-width: 445px) {
     .tagline{
       font-size: 50%;

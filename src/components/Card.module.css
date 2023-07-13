@@ -28,7 +28,8 @@
   .card p {
     padding: 0 1.5rem;
     font-family: Malgun Gothic, Montserrat, Ariel;
-    font-size: larger;
+    font-size: medium;
+    font-weight: 400;
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
   }

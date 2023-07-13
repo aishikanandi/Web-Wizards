@@ -94,8 +94,8 @@ function ProgramTimeline(){
         nav("/programtimeline/program", { state: { results: program } });
       }
       function truncateDescription(description) {
-        if (description.length > 50) {
-          return description.substring(0, 70) + "...";
+        if (description.length > 130) {
+          return description.substring(0, 130) + "...";
         }
         return description;
       }
@@ -122,7 +122,7 @@ function ProgramTimeline(){
                 <div className='program-big-box'>
                   <h2>{program.name}</h2>
                   <div className='program-small-box'>
-                    <p>Host - {program.host} <br /> {truncateDescription(program.description)}</p>
+                   <p className='hostName'>Host: {program.host} </p><p className='programDescription'> {truncateDescription(program.description)}</p> 
                     <button className='program-details' onClick={() => {
                     handleclick(program);
                   }}>KNOW MORE <FontAwesomeIcon icon={faSquareArrowUpRight} /> 

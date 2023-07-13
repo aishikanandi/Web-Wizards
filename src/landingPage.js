@@ -13,13 +13,14 @@ function LandingPage() {
     <React.Fragment className="landingPage">
        <div className="waveUp" />
       <Navbar className="navBar" />
-      <div className="mainLogo"><img
+      <div className="MainPagePadding"><div className="mainLogo"><img
         className="centerLogo"
         alt=""
         src="openlakelogo.svg"
       ></img></div>
 	  <WaterText/> 
-    <div className="tagline"><h2>Embrace the waves of Open Source!</h2></div>
+    <div className="tagline"><h2>Embrace the waves of Open Source!</h2></div></div>
+      
   <Waves />
     <Intro /> 
 
