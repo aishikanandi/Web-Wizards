@@ -3,6 +3,7 @@ import LandingPage from "./landingPage";
 import ProgramTimeline from "./programTimeline";
 import Program from "./Program";
 import Projects from "./Projects";
+import Community from "./Community";
 function App() {
     return (
       <BrowserRouter>
