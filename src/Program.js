@@ -31,7 +31,7 @@ function Program(){
                     </div>
                 </div>
                 <div className="event-date-container">
-                    <p>Conducted on <span class="event-date">{results.date}</span></p>
+                    <p>Date - <span class="event-date">{results.date}</span></p>
                 </div>
                 <div className="program-description">
                     <p>{results.description}</p>
