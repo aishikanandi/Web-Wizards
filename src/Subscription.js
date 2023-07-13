@@ -40,7 +40,7 @@ function Subscription(){
             <Navbar className="navBar" />
             <div className="subscription-form">
                 <div className="subscription-form-heading">
-                    <h1>Subscibe for the newsletter</h1>
+                    <h1>Subscribe for the newsletter</h1>
                 </div>
                 <input type="text" className="subscription-form-input" placeholder="First Name" value={firstName} onChange={handleFirstNameChange} required autoFocus /> <br />
                 <input type="text" className="subscription-form-input" placeholder="Last Name" value={lastName} onChange={handleLastNameChange} required /> <br />

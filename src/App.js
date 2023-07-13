@@ -4,6 +4,7 @@ import ProgramTimeline from "./programTimeline";
 import Program from "./Program";
 import Projects from "./Projects";
 import Subscription from "./Subscription";
+import WallOfFame from "./wallOfFame";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/programtimeline/program' element={<Program />} />
         <Route path="/subscription" element={<Subscription />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path='/walloffame' element={<WallOfFame />} />
       </Routes>
       </BrowserRouter>
     );
