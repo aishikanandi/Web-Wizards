@@ -23,7 +23,7 @@ function Navbar() {
 				<a href="/programtimeline">Programs</a>
 				<a href="/#">Community</a>
                 <a href="/#">Blogs</a>
-                <a href="/#">Subscription</a>
+                <a href="/subscription">Subscription</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
