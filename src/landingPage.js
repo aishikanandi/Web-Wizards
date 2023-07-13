@@ -20,9 +20,11 @@ function LandingPage() {
       ></img></div>
 	  <WaterText/> 
     <div className="tagline"><h2>Embrace the waves of Open Source!</h2></div>
-    <Waves />
-    <Intro />
-    <Carousel/>
+  <Waves />
+    <Intro /> 
+
+    <div className="landingpaagecarousel"><Carousel/></div>
+    
     <Footer className="footer" />   
     </React.Fragment> 
   );

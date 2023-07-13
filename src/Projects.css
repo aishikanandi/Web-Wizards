@@ -153,11 +153,7 @@
     margin-top: 105% !important;
   }
 }
-@media only screen and (max-width: 430px) {
-  .all-projects-container {
-    margin-top: 110% !important;
-  }
-}
+
 
 
 @media only screen and (max-width: 1024px) {

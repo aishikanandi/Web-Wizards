@@ -3,10 +3,10 @@
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
-    background-color: #1c79c5;
+    background-color: #2375b8e4;
     color: white;
-    width: 20rem;
-    height: fit-content;
+    width: 23rem;
+    min-height: 23rem;
     padding: 0 2rem 2rem 2rem;
     border-radius: 10px;
   }
@@ -18,12 +18,17 @@
   }
   
   .card h2 {
-    margin: 0;
-    margin-top: 1rem;
+    margin: 1rem auto 0.7rem auto;
+    font-family: Monsterrat, sans-serif;
+    color: black;
+    font-weight: 1200;
+    font-size: xx-large;
   }
   
   .card p {
-    margin: 0;
+    padding: 0 1.5rem;
+    font-family: Malgun Gothic, Montserrat, Ariel;
+    font-size: larger;
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
   }
@@ -33,22 +38,67 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+  @media only screen and (max-width: 1295px) {
+    .card{
+      width: 20rem;
+      min-height: 20rem;
+    }
+    .card h2{
+      font-size: x-large;
+    }
+    .card p{
+      font-size: larger;
+    }
+    .card img {
+      margin-top: -20%;
+    }
+  }
   @media only screen and (max-width: 650px) {
     .card {
       width: 14rem;
+      min-height: 10rem;
+      padding: 0 1rem 1rem 1rem;
+    }
+    .card h2{
+      font-size: larger;
+    }
+    .card p{
+      font-size: medium;
+    }
+    .card img {
+      margin-top: -16%;
     }
   }
   @media only screen and (max-width: 500px) {
     .card {
       width: 12rem;
+      min-height: 8rem;
       padding: 0 1rem 1rem 1rem;
+    }
+    .card h2{
+      font-size: large;
+    }
+    .card p{
+      font-size: medium;
+    }
+    .card img {
+      margin-top: -13%;
     }
   }
 
   @media only screen and (max-width: 370px) {
     .card {
       width: 11rem;
+      min-height: 6rem;
       padding: 0 0.7rem 0.7rem 0.7rem;
+    }
+    .card h2{
+      font-size: medium;
+    }
+    .card p{
+      font-size: small;
+    }
+    .card img {
+      margin-top: -10%;
     }
   }
