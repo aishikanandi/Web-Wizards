@@ -12,7 +12,6 @@ function Program(){
     console.log(results);
     const capitalizedProgramName = results.name.toUpperCase();
     const getImagePath = (poster) => {
-        // Assuming the images are stored in the `public` folder
         return process.env.PUBLIC_URL + '/' + poster;
       };
     return(
