@@ -37,7 +37,7 @@ function Navbar() {
 				</div>
 			</div>
                 <a href="/#">Blogs</a>
-                <a href="/#">Subscription</a>
+                <a href="/subscription">Subscription</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

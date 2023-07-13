@@ -12,7 +12,6 @@ function Program(){
     console.log(results);
     const capitalizedProgramName = results.name.toUpperCase();
     const getImagePath = (poster) => {
-        // Assuming the images are stored in the `public` folder
         return process.env.PUBLIC_URL + '/' + poster;
       };
     return(
@@ -32,7 +31,7 @@ function Program(){
                     </div>
                 </div>
                 <div className="event-date-container">
-                    <p>Conducted on <span class="event-date">{results.date}</span></p>
+                    <p>Date - <span class="event-date">{results.date}</span></p>
                 </div>
                 <div className="program-description">
                     <p>{results.description}</p>

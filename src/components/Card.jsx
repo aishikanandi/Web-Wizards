@@ -11,6 +11,12 @@ function Card({ imagen, name, description }) {
       ? "0 20px 25px rgb(0 0 0 / 25%)"
       : "0 2px 10px rgb(0 0 0 / 8%)"
   });
+  function truncateDescription(description) {
+    if (window.innerWidth < 720 && description.length > 60) {
+      return description.substring(0, 60) + "...";
+    }
+    return description;
+  }
   return (
     <animated.div
       className={Styles.card}
@@ -21,7 +27,7 @@ function Card({ imagen, name, description }) {
    <img src={imagen} alt="" />
       <h2>{name}</h2>
       <p>
-        {description}
+        {truncateDescription(description)}
       </p>
     </animated.div>
   );
