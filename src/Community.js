@@ -13,8 +13,6 @@ class CommunityPage extends React.Component {
   render() {
     return (
       <div>
-      <div className="waveUpCommunitypage" />
-      <Navbar className="navBar" />
       <div>
   <TitleImage className="title-image" alt="title" />
 </div>

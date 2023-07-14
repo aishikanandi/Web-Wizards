@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Subscription from "./Subscription";
 import WallOfFame from "./wallOfFame";
 import Navbar from "./components/navbar";
+import Community from "./Community";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/walloffame" element={<WallOfFame />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/community" element={<Community />} />
       </Routes>
     </BrowserRouter>
   );
