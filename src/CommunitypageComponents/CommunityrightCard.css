@@ -1,0 +1,58 @@
+.Name-container-community-right{
+    border-radius: 24px;
+background: #0C1B2A;
+box-shadow: -8px 14px 9px 0px rgba(0, 0, 0, 0.25);
+width: 35%;
+position: absolute;
+z-index: 1;
+
+}
+.containerinsidenameCommunity-right{
+    margin-left: -30%;
+}
+.Community-right-card{
+    background: red;
+    position: relative;
+    margin-top: 10%;
+    left: 50%;
+}
+.CommunityName{
+    color: white;
+font-family: Montserrat;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+.Communitylink-container{
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoimagecommunity{
+    width: 75%;
+}
+.ImageContainerCommunityRight{
+    
+    position: absolute;
+    left: 25%;
+    margin-top: -8%;
+    z-index: 2;
+}
+
+.ContainingImageCommunity{
+    position: relative;
+    border-radius: 228px;
+    box-shadow: -3px 18px 10px 0px rgba(0, 0, 0, 0.25);
+    
+}
+.imageCommunity{
+    position: absolute;
+    z-index: 4;
+    width: 180px;
+}
+
+
+

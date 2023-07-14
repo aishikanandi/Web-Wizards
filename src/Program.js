@@ -16,8 +16,6 @@ function Program(){
       };
     return(
         <div className="program">
-            <div className="waveUp" />
-            <Navbar className="navBar" />
             <div className="individual-program">
                 <div className="program-name">
                     <h1>{capitalizedProgramName}</h1>

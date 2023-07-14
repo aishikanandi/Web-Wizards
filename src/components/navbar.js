@@ -40,7 +40,7 @@ function Navbar() {
 					<a href="/walloffame">Wall of Fame</a>
 				</div>
 			</div>
-                <a href="/#">Blogs</a>
+                <a href="/blogs">Blogs</a>
                 <a href="/subscription">Subscription</a>
 				<button
 					className="nav-btn nav-close-btn"

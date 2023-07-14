@@ -100,10 +100,8 @@ function ProgramTimeline(){
         return description;
       }
     return(
-      <><Navbar className="navBar" />
+      <>
         <div className = "programTimeline">
-            <div className="waveUp" />
-            
             <div className='programs-container'>
             <div className='programs-heading'>
                 <h1>PROGRAMS</h1>
