@@ -70,6 +70,15 @@
     width: 45%;
 }
 
+.submit-response{
+    font-family: "Nanum Gothic";
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 45%;
+    text-align: center;
+    margin-left: 27%;
+}
+
 @media (max-width: 676px) {
     .subscription-form-input{
         width: 80%;

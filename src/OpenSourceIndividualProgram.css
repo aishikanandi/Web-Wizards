@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
-.program{
+.open-source-program{
     color: #FFF;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@
     font-style: normal;
 }
 
-.individual-program{
+.individual-open-source-program{
     display: flex;
     align-items: center;
     padding: 2rem;
@@ -18,7 +18,7 @@
     height: 100%;
 }
 
-.program-name{
+.open-source-program-name{
     font-size: 375%;
     padding: 1rem 0;
     font-family: "Montserrat";    
@@ -29,28 +29,28 @@
     margin-bottom: 1%;
 }
 
-.program-logo{
+.open-source-program-logo{
     position: absolute;
     height: 100%;
-    margin-top: 70rem;
+    margin-top: 75rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.program-logo img{
+.open-source-program-logo img{
     max-height: 100%;
     max-width: 100%;
     /* object-fit: contain; */
 }
 
-.program-description{
+.open-source-program-description{
     /* display: block; */
     text-align: justify;
     font-family: "Nanum Gothic";
     font-size: 225%;
     font-weight: 400;
     position: absolute;
-    margin-top: 90rem;
+    margin-top: 100rem;
     left: 50%;
     transform: translateX(-50%);
     /* display: flex; */
@@ -60,36 +60,22 @@
 }
 
 @media (min-width: 865px) and (max-width: 1233px) {
-    .program-logo{
+    .open-source-program-logo{
         width:  28.175rem;
         height: 70%;
-        margin-top: 47.5rem;
+        margin-top: 50rem;
     }
 }
 
-@media (min-width: 1096px) and (max-width: 1233px) {
-    .program-description{
+@media (min-width: 865px) and (max-width: 1233px) {
+    .open-source-program-description{
         font-size: 157.5%;
-        margin-top: 110rem;
+        margin-top: 70rem;
     }
-}   
-
-@media (min-width: 952px) and (max-width: 1096px) {
-    .program-description{
-        font-size: 157.5%;
-        margin-top: 112rem;
-    }
-}   
-
-@media (min-width: 865px) and (max-width: 952px) {
-    .program-description{
-        font-size: 157.5%;
-        margin-top: 114rem;
-    }
-}   
+}    
 
 @media (min-width: 1025px) and (max-width: 1233px) {
-    .program-name{
+    .open-source-program-name{
         font-size: 262.5%;
         padding: 2rem 0;
         margin-bottom: 1.5%;
@@ -97,7 +83,7 @@
 }
 
 @media (min-width: 865px) and (max-width: 1024px) {
-    .program-name{
+    .open-source-program-name{
         font-size: 262.5%;
         /* padding: 0.1rem 0; */
         margin: -3% 0 -2%;
@@ -105,148 +91,147 @@
 }
 
 @media (min-width: 620px) and (max-width: 864px) {
-    .program-name{
+    .open-source-program-name{
         font-size: 187.5%;
         margin: -3% 0 1%;
     }
-    .program-logo{
+    .open-source-program-logo{
         width:  20.125rem;
         height: 50%;
-        margin-top: 32.5rem;
+        margin-top: 35.5rem;
     }
 }
 
 @media (min-width: 783px) and (max-width: 865px) {
-    .program-description{
+    .open-source-program-description{
         font-size: 112.5%;
-        margin-top: 77rem;
+        margin-top: 50rem;
     }
 }   
 
-@media (min-width: 680px) and (max-width: 783px) {
-    .program-description{
+@media (min-width: 620px) and (max-width: 783px) {
+    .open-source-program-description{
         font-size: 112.5%;
-        margin-top: 78rem;
-    }
-}   
-
-@media (min-width: 620px) and (max-width: 680px) {
-    .program-description{
-        font-size: 112.5%;
-        margin-top: 79rem;
-    }
-}   
-
-@media (min-width: 470px) and (max-width: 620px) {
-    .program-description{
-        font-size: 67.5%;
-        margin-top: 46rem; 
-    }
-}
-
-@media (min-width: 455px) and (max-width: 470px) {
-    .program-description{
-        font-size: 67.5%;
-        margin-top: 47rem;
+        margin-top: 52rem;
     }
 }   
 
 @media (min-width: 455px) and (max-width: 620px) {
-    .program-name{
+    .open-source-program-description{
+        font-size: 67.5%;
+        margin-top: 35rem; 
+    }
+}
+
+@media (min-width: 455px) and (max-width: 620px) {
+    .open-source-program-name{
         font-size: 112.5%;
         margin: -3% 0 -1.5%;
     }
-    .program-logo{
+    .open-source-program-logo{
         width:  12.075rem;
         height: 30%;
-        margin-top: 20rem;
+        margin-top: 25rem;
     }
 }
 
 @media (max-width: 455px) {
-    .program-name{
+    .open-source-program-name{
         font-size: 112.5%;
         margin: -15% 0 -5%;
     }
-    .program-logo{
+    .open-source-program-logo{
         width:  12.075rem;
         height: 30%;
-        margin-top: 18rem;
+        margin-top: 23rem;
     }
 }
 
 @media (min-width: 408px) and (max-width: 455px) {
-    .program-description{
+    .open-source-program-description{
         font-size: 67.5%;
-        margin-top: 45rem;
+        margin-top: 34rem;
     }    
 }
 
 @media (max-width: 408px) {
-    .program-description{
+    .open-source-program-description{
         font-size: 67.5%;
-        margin-top: 46rem;
+        margin-top: 36rem;
     }
 }
 
-/* @media (min-width: 1446px) and (max-width: 1676px) {
-    .program-description{
-        margin-top: 161rem;
-    }    
-    .individual-program{
-        padding-bottom: 88%;
+@media (min-width: 1446px) and (max-width: 1676px) {   
+    .individual-open-source-program{
+        padding-bottom: 67%;
     }
-} */
+}
 
 @media (min-width: 1260px) and (max-width: 1446px) {
-    .program-description{
-        margin-top: 165rem; 
-    }
-    .individual-program{
-        padding-bottom: 105%;
+    .individual-open-source-program{
+        padding-bottom: 77%;
     }
 }
 
 @media (min-width: 420px) and (max-width: 500px) {
-    .individual-program{
+    .individual-open-source-program{
         padding-bottom: 44%;
+    }
+    .open-source-program .rounded-social-buttons{
+        margin-top: 120%;
     }
 }
 
 @media (max-width: 420px) {
-    .individual-program{
+    .individual-open-source-program{
         padding-bottom: 62%;
+    }
+    .open-source-program .rounded-social-buttons{
+        margin-top: 150%;
     }
 }
 
 @media (min-width: 500px) and (max-width: 620px) {
-    .individual-program{
+    .individual-open-source-program{
         padding-bottom: 32%;
+    }
+    .open-source-program .rounded-social-buttons{
+        margin-top: 95%;
     }
 }
 
 @media (min-width: 621px) and (max-width: 750px) {
-    .individual-program{
+    .individual-open-source-program{
         padding-bottom: 70%;
+    }
+    .open-source-program .rounded-social-buttons{
+        margin-top: 30%;
     }
 }
 
 @media (min-width: 750px) and (max-width: 865px) {
-    .individual-program{
+    .individual-open-source-program{
         padding-bottom: 60%;
+    }
+    .open-source-program .rounded-social-buttons{
+        margin-top: 20%;
     }
 }
 
 @media (min-width: 865px) and (max-width: 1000px) {
-    .individual-program{
-        padding-bottom: 85%;
+    .individual-open-source-program{
+        padding-bottom: 83%;
     }
 }
 
 @media (min-width: 1233px) and (max-width: 1260px) {
-    .individual-program{
-        padding-bottom: 120%;
+    .individual-open-source-program{
+        padding-bottom: 82%;
     }
 }
 
-
+@media (min-width: 1000px) and (max-width: 1233px){
+    .individual-open-source-program{
+        padding-bottom: 70%;
+    }
+}

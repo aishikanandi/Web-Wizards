@@ -11,20 +11,15 @@ function Program(){
     console.log(results);
     const capitalizedProgramName = results.name.toUpperCase();
     return(
-        <div className="program">
-            <div className="individual-program">
-                <div className="program-name">
+        <div className="open-source-program">
+            <div className="individual-open-source-program">
+                <div className="open-source-program-name">
                     <h1>{capitalizedProgramName}</h1>
                 </div>
-                <div className="program-logo">
-                    <div className="logo-rectangle-1"></div>
-                    <div className="logo-rectangle-2">
-                        <div className="logo-container">
-                            <img src={require('./OpenSourceProgramPageElements/' + results.BGremovedlogo)} />
-                        </div>
-                    </div>
+                <div className="open-source-program-logo">
+                    <img src={require('./OpenSourceProgramPageElements/' + results.BGremovedlogo)} />
                 </div>
-                <div className="program-description">
+                <div className="open-source-program-description">
                     <p>{results.description}</p>
                 </div>
             </div>
