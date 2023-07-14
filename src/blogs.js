@@ -47,9 +47,7 @@ const UserData = () => {
           />
         ))}
       </div>
-      <Routes>
-        <Route path="/blogs/:id" element={<BlogPage />} />
-      </Routes>
+
       <Footer className="footer" />
     </div>
   );
