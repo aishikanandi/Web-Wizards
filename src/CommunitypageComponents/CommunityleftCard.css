@@ -14,6 +14,8 @@ z-index: 1;
     left: 15%;
     margin-top: 7%;
 }
+
+
 .CommunityName{
     color: white;
 font-family: Montserrat;
@@ -34,8 +36,8 @@ line-height: normal;
 }
 .ImageContainerCommunityLeft{
     
-    position: absolute;
-    left: -6.5%;
+    position: relative;
+    left: -57%;
     margin-top: -8%;
     z-index: 2;
 }
@@ -51,6 +53,157 @@ line-height: normal;
     z-index: 4;
     width: 180px;
 }
+
+
+
+@media only screen and (max-width: 1024px) {
+    .Name-container-community-left{
+        width: 30%;
+    }
+    .imageCommunity{
+        transform: translateY(10%) scale(0.8);
+    }
+    .ImageContainerCommunityLeft{
+    
+        position: relative;
+        left: -60%;
+        margin-top: -8%;
+        z-index: 2;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 980px) {
+    .ImageContainerCommunityLeft{ 
+        left: -63%;
+      
+    }
+    .imageCommunity{
+        transform: translateY(10%) scale(0.6);
+    }
+    .logoimagecommunity{
+        width: 50%;
+    }
+    .CommunityName{
+    font-size: 17px;
+    font-weight: 500;
+  }
+}
+  
+  @media only screen and (max-width: 720px) {
+    .ImageContainerCommunityLeft{ 
+        left: -65%;
+      
+    }
+    .imageCommunity{
+        transform: translateY(-3%) scale(0.5);
+    }
+    .Name-container-community-left{
+        width: 30%;
+    }
+    .CommunityName{
+        font-size: 25px !important;
+        font-weight: 500;
+      }
+
+      .logoimagecommunity{
+        width: 60% !important;
+    }
+    .Communitylink-container{
+     margin-top: -10%;
+    }
+  
+
+  }
+
+  @media only screen and (max-width: 606px) {
+    .ImageContainerCommunityLeft{ 
+        left: -65%;
+      
+    }
+    .imageCommunity{
+        transform: translateY(-3%) scale(0.4);
+    }
+    .logoimagecommunity{
+        width: 47% !important;
+    }
+    .CommunityName{
+        font-size: 21px !important;
+        font-weight: 500;
+      }
+
+  }
+
+  @media only screen and (max-width: 542px) {
+    .ImageContainerCommunityLeft{ 
+        left: -67%;
+      
+    }
+    .imageCommunity{
+        transform: translateY(-3%) scale(0.4);
+    }
+    .logoimagecommunity{
+        width: 47% !important;
+    }
+    .CommunityName{
+        font-size: 21px !important;
+        font-weight: 500;
+      }
+      .Name-container-community-left{
+        width: 30%;
+        height: auto;
+    }
+
+  }
+  
+  @media only screen and (max-width: 475px) {
+    .ImageContainerCommunityLeft{ 
+        left: -73%;
+      
+    }
+    .imageCommunity{
+        transform: translateY(-5%) scale(0.4);
+    }
+
+ 
+  }
+
+  @media only screen and (max-width: 388px) {
+    .ImageContainerCommunityLeft{ 
+        left: -77%;
+      
+    }
+    .imageCommunity{
+        transform: translateY(-7%) scale(0.4);
+    }
+
+    @media only screen and (max-width: 320px) {
+        .ImageContainerCommunityLeft{ 
+            left: -80%;
+          
+        }
+        .imageCommunity{
+            transform: translateY(-10%) scale(0.2);
+        }
+        .logoimagecommunity{
+            width: 30% !important;
+        }
+        .CommunityName{
+            font-size: 17px !important;
+            font-weight: 500;
+          }
+          .Name-container-community-left{
+            width: 30%;
+            height: auto;
+        }
+    
+     
+      }
+    
+
+ 
+  }
 
 
 

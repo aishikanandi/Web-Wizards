@@ -10,8 +10,8 @@ function CommunityrightCard(props) {
     <div className="Community-right-card">
     <div className="Name-container-community-right">
   <div className='containerinsidenameCommunity-right'>
-  <p className='CommunityName'>{props.name}</p>
-        <div className='Communitylink-container'>
+  <p className='CommunityNameright'>{props.name}</p>
+        <div className='Communitylink-containerright'>
         <a href={props.githublink}><Githublink className='logoimagecommunity' alt="button.svg" /></a>
         <a href={props.maillink}><Maillink className='logoimagecommunity' alt="button.svg" /></a>
         <a href={props.linkedinlink}><Linkedinlink className='logoimagecommunity' alt="button.svg" /></a></div>
@@ -19,8 +19,8 @@ function CommunityrightCard(props) {
    
     </div>
     <div className='ImageContainerCommunityRight'>
-    <div className='ContainingImageCommunity'>
-    <img src={props.image} alt="image" class="imageCommunity"/>
+    <div className='ContainingImageCommunityright'>
+    <img src={props.image} alt="image" class="imageCommunityright"/>
     </div>
     
 

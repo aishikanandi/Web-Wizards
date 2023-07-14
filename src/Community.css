@@ -23,3 +23,53 @@
   .footercontainer{
     margin-top: 10%;
   }
+
+
+  
+  @media only screen and (max-width: 1024px) {
+    .title-image {
+      width: 40%;
+      margin-top: 1%;
+    }
+    .waveUpCommunitypage {
+      height: 40vh;
+    }
+    .footercontainer{
+      margin-top: 20%;
+    }
+
+  }
+  
+  @media only screen and (max-width: 720px) {
+    .title-image {
+      width: 40%;
+      margin-top: 1%;
+    }
+    .waveUpCommunitypage {
+      top: -2%;
+      left: 0;
+      height: 30%;
+    }
+    .footercontainer{
+      margin-top: 35%;
+    }
+  
+
+  }
+  
+  @media only screen and (max-width: 455px) {
+    .title-image {
+      width: 40%;
+      margin-top: -9%;
+    }
+    .waveUpCommunitypage {
+      top: -8%;
+      left: 0;
+      height: 30%;
+    }
+    .footercontainer{
+      margin-top: 50%;
+    }
+ 
+  }
+  
