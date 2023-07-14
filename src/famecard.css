@@ -1,0 +1,229 @@
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-height: 13rem;
+    --card-width: calc(var(--card-height) / 0.18);
+  }
+
+  .achieverImage{
+    position: absolute;
+    top:10%;
+  }
+  .fameCard {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    margin-bottom: 5%; 
+    font-family: Malgun Gothic, Montserrat, Ariel;
+  }
+  .image {
+    flex: 0 0 18%;
+    display: flex;
+    object-fit: cover;
+height: 100%;
+
+  }
+  
+  .imageLeft img {
+    height: 100%;
+    z-index: 20;
+    min-width: 65%;
+    max-width: 80%;
+    
+  }
+  .imageRight {
+justify-content: flex-end !important;
+overflow: hidden;
+  }
+  .imageRight img{
+    min-width: 65%;
+    max-width: 80%;
+  }
+  
+  .fameCard .infoRight {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    color: #fff;
+  }
+  .fameCard .infoLeft {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    color: #fff;
+  }
+  .fameCard::before {
+    content: "";
+    width: 102%;
+    height: 106%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      ,#a4c4cd, #47506f 43%, #081c37);
+      position: absolute;
+      z-index: -1;
+      top: -2.5%;
+      left: -1%;
+      /* animation: spin 2.5s linear infinite; */
+  }
+  
+  .fameCard::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      ,#a4c4cd, #47506f 43%, #081c37);
+      opacity: 1;
+    transition: opacity .5s;
+    /* animation: spin 2.5s linear infinite; */
+  }
+  
+  /* @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  } */
+  @media only screen and (max-width: 1629px) {
+    .cardContainer {
+      padding-top: 12%;
+    }
+
+  }@media only screen and (max-width: 1429px) {
+    .cardContainer {
+      padding-top: 12%;
+    }
+    :root {
+      --card-height: 11rem;
+      --card-width: calc(var(--card-height) / 0.18);
+    }
+  }@media only screen and (max-width: 1150px) {
+    .cardContainer {
+      padding-top: 17%;
+    }
+    :root {
+      --card-height: 9.5rem;
+      --card-width: calc(var(--card-height) / 0.18);
+    }
+  }
+  @media only screen and (max-width: 983px) {
+    .cardContainer {
+      padding-top: 15%;
+      font-size: small;
+    }
+    :root {
+      --card-height: 8rem;
+      --card-width: calc(var(--card-height) / 0.18);
+    }
+    .sign{
+      font-size: 88%;
+    }
+  }
+  @media only screen and (max-width: 805px) {
+    .cardContainer {
+      padding-top: 19%;
+      font-size: small;
+    }.wallOfFameContainer  header .logo{
+      height: 120%;
+      padding-bottom: 0.5%;
+    }
+    :root {
+      --card-height: 6rem;
+      --card-width: calc(var(--card-height) / 0.18);
+    }.sign{
+      font-size: 65%;
+    }.cardWrapper{
+      margin-top: 3%;
+    }
+  }
+  @media only screen and (max-width: 617px) {
+    .cardContainer {
+      padding-top: 19%;
+      font-size: 60%; 
+    }
+    :root {
+      --card-height: 5rem;
+      --card-width: calc(var(--card-height) / 0.18);
+    }.sign{
+      font-size: 60%;
+    }
+  }@media only screen and (max-width: 517px) {
+    .cardContainer {
+      padding-top: 16%;
+      font-size: 55%; 
+    }
+    :root {
+      --card-height: 4rem;
+      --card-width: calc(var(--card-height) / 0.18);
+    }.sign{
+      font-size: 50% !important;
+    }.cardWrapper{
+      margin-top: 5%;
+    }
+  }@media only screen and (max-width: 427px) {
+    .cardContainer {
+      padding-top: 24%;
+      font-size: 50%; 
+    }
+    :root {
+      --card-height: 3.8rem;
+      --card-width: calc(var(--card-height) / 0.29);
+    }.sign{
+      font-size: 45% !important;
+    }.cardWrapper{
+      margin-top: 5%;
+    }
+  }@media only screen and (max-width: 397px) {
+    .cardContainer {
+      padding-top: 18%;
+      font-size: 50%; 
+    }
+    :root {
+      --card-height: 5.5rem;
+    }.sign{
+      font-size: 45% !important;
+    }.cardWrapper{
+      margin-top: 5%;
+    }.image{
+      flex: 0 0 30%;
+    }
+  }@media only screen and (max-width: 367px) {
+    .cardContainer {
+      padding-top: 26%;
+      font-size: 50%; 
+    }
+    :root {
+      --card-height: 5.5rem;
+      --card-width: calc(var(--card-height) / 0.32);
+    }.sign{
+      font-size: 45% !important;
+    }.cardWrapper{
+      margin-top: 5%;
+    }.image{
+      flex: 0 0 30%;
+    }
+  }
