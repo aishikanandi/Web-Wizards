@@ -36,8 +36,6 @@ function Subscription(){
     }
     return(
         <div className="subscription">
-            <div className="waveUp" />
-            <Navbar className="navBar" />
             <div className="subscription-form">
                 <div className="subscription-form-heading">
                     <h1>Subscribe for the newsletter</h1>

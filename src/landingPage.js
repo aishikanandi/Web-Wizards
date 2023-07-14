@@ -11,8 +11,8 @@ import Intro from "./components/Intro.js";
 function LandingPage() {
   return (
     <React.Fragment className="landingPage">
-       <div className="waveUp" />
-      <Navbar className="navBar" />
+       {/* <div className="waveUp" />
+      <Navbar className="navBar" /> */}
       <div className="MainPagePadding"><div className="mainLogo"><img
         className="centerLogo"
         alt=""
