@@ -21,7 +21,7 @@ const Intro = () => {
           <h2 className="third">CONTRIBUTE.</h2>
         </div>
         <div className="intro-connect-bottom">
-          <img alt="" src="openSource.svg" />
+          <img alt="" src="openSource2.svg" />
         </div>
       </div>
     </div>
