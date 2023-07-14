@@ -10,7 +10,7 @@ function App() {
     return (
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<LandingPage />} />
+        <Route path='/' element={<Community />} />
         <Route path='/programtimeline' element={<ProgramTimeline />} />
         <Route path='/programtimeline/program' element={<Program />} />
         <Route path="/subscription" element={<Subscription />} />

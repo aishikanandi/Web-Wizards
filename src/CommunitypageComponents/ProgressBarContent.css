@@ -20,3 +20,48 @@ line-height: normal;
 margin-top: 150px;
 
 }
+
+
+
+@media only screen and (max-width: 1024px) {
+    .DesignationCommunitymentors{
+        font-size: 25px;
+    
+    }
+    .DesignationCommunitycoordinator{
+        font-size: 25px;
+    
+    }
+ 
+
+  }
+  
+  @media only screen and (max-width: 720px) {
+    .DesignationCommunitymentors{
+        font-size: 16px;
+    
+    }
+    .DesignationCommunitycoordinator{
+        font-size: 16px;
+    
+    }
+ 
+  
+
+  }
+  
+  @media only screen and (max-width: 455px) {
+    .DesignationCommunitymentors{
+        font-size: 16px;
+    
+    }
+    .DesignationCommunitycoordinator{
+        font-size: 16px;
+    
+    }
+
+
+  
+ 
+  }
+  
