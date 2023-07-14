@@ -1,0 +1,146 @@
+.wallOfFameContainer {
+    position: relative;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+.wallOfFameContainer  header .logo{
+    height: 70%;
+    padding-bottom: 0.5%;
+  }
+  .contentContainer {
+    position: relative;
+    z-index: 1;
+  }
+  .cardWrapper{
+    height: 100%;
+  }
+  .sign {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 3%; /* Adjust as needed */
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+  }
+  
+  .brickBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+  }
+  
+  .cardWrapper {
+    margin-top: 5%;
+    z-index: 15;
+  }
+
+.wallOfFameContainer .rounded-social-buttons {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    background: linear-gradient(to top, #0F2027, #092f41);
+  }
+
+.brickRow {
+    display: flex;
+    background: #ebebeb5a;
+}
+.brickRow:first-child .brick {
+    margin-top: 4px;
+}
+.brickRow:last-child .brick {
+    margin-bottom: 4px;
+}
+.brickRow:nth-child(even) .brick:first-child {
+    display: none;
+}
+.brickRow:nth-child(even) .brick:last-child {
+    margin-right: 2px;
+}
+.brickRow:nth-child(even)::before, .brickRow:nth-child(even)::after {
+    position: relative;
+    content: "";
+    background: #3a505f;
+    width: calc(7.5%);
+    height: 3vw;
+    border-radius: 2px;
+    margin: 2px;
+    box-shadow: 0 0 19px 1px #120c0c inset;
+}
+.brickRow:nth-child(even)::before {
+    margin-left: 4px;
+}
+.brickRow:nth-child(even)::after {
+    margin-right: 4px;
+}
+.brick {
+    background: #3a505f;
+    width: 15%;
+    height: 3vw;
+    border-radius: 2px;
+    margin: 2px;
+    box-shadow: 0 0 19px 1px #120c0c inset;
+}
+.brick:last-child {
+    margin-right: 4px;
+}
+.brick:first-child {
+    margin-left: 4px;
+}
+  
+:root {
+    --shadow-color: #2f5783;
+    --shadow-color-light: rgb(255, 255, 255);
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500&display=swap');
+  .sign p {
+    font-size: 550%;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  
+  .logo-1 {
+    color: white;
+    animation: neon 3s infinite;
+  }
+  
+  @keyframes neon {
+    0% {
+      text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+      0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+    }
+    50% {
+      text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+      0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+      0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+    }
+    100% {
+      text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+      0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+    }
+  }
+
+  

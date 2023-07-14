@@ -26,14 +26,18 @@ function Navbar() {
             <div class="nav-items">
 			<nav ref={navRef}>
 				<a href="/">Home</a>
-				<a href="/projects">Projects</a>
-				<a href="/programtimeline">Programs</a>
 				<div class="dropdown">
-				<a href="#" class="dropbtn" onHover={showNavbar2}>Community <i class="fa fa-caret-down"></i></a>
+				<a href="#" class="dropbtn" onHover={showNavbar2}>Programs<i class="fa fa-caret-down"></i></a>
+				<div class="dropdown-content" id='navRef'>
+					<a href="/programtimeline">Our Programs</a>
+					<a href="#">Opensource Programs</a>
+				</div></div>
+				<a href="/projects">Projects</a>
+				<div class="dropdown">
+				<a href="#" class="dropbtn" onHover={showNavbar2}>Community<i class="fa fa-caret-down"></i></a>
 				<div class="dropdown-content" id='navRef'>
 					<a href="#">Mentors</a>
-					<a href="#">Community</a>
-					<a href="#">Wall of Fame</a>
+					<a href="/walloffame">Wall of Fame</a>
 				</div>
 			</div>
                 <a href="/#">Blogs</a>
