@@ -62,13 +62,14 @@ header .nav-btn {
 	opacity: 0;
 	font-size: 1.8rem;
 }
-
 @media only screen and (max-width: 1044px) {
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
 	}
-
+	a.dropbtn{
+		font-size: larger;
+	}
 	header nav {
 		position: fixed;
 		top: -120vh;
@@ -112,7 +113,6 @@ header .nav-btn {
 	nav a.dropbtn{
 		font-family: 'Open Sans', sans-serif !important;
 		font-weight: bolder;
-		font-size: 3rem !important;
 	  }
 }
 
@@ -124,7 +124,6 @@ header .nav-btn {
 	a.dropbtn{
 		font-family: 'Open Sans', sans-serif !important;
 		font-weight: bolder;
-		font-size: 3rem !important;
 	  }
 }
 a.dropbtn {
@@ -146,6 +145,7 @@ a.dropbtn {
   
   .dropdown {
 	position: relative;
+	
   }
   
   .dropdown-content {

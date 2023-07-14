@@ -36,7 +36,7 @@ function Navbar() {
 				<div class="dropdown">
 				<a href="#" class="dropbtn" onHover={showNavbar2}>Community<i class="fa fa-caret-down"></i></a>
 				<div class="dropdown-content" id='navRef'>
-					<a href="#">Mentors</a>
+					<a href="/community">Mentors</a>
 					<a href="/walloffame">Wall of Fame</a>
 				</div>
 			</div>

@@ -9,11 +9,13 @@ function CommunityleftCard(props) {
   return (
     <div className="Community-left-card">
     <div className="Name-container-community-left">
+    
   <p className='CommunityName'>{props.name}</p>
         <div className='Communitylink-container'>
         <a href={props.githublink}><Githublink className='logoimagecommunity' alt="button.svg" /></a>
         <a href={props.maillink}><Maillink className='logoimagecommunity' alt="button.svg" /></a>
         <a href={props.linkedinlink}><Linkedinlink className='logoimagecommunity' alt="button.svg" /></a></div>
+        
    
     </div>
     <div className='ImageContainerCommunityLeft'>
