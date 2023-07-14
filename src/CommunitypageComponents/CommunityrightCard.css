@@ -5,6 +5,7 @@ box-shadow: -8px 14px 9px 0px rgba(0, 0, 0, 0.25);
 width: 35%;
 position: absolute;
 z-index: 1;
+padding-right: 3%;
 
 }
 .containerinsidenameCommunity-right{
@@ -16,7 +17,7 @@ z-index: 1;
     margin-top: 10%;
     left: 50%;
 }
-.CommunityName{
+.CommunityNameright{
     color: white;
 font-family: Montserrat;
 font-size: 25px;
@@ -25,13 +26,13 @@ font-weight: 500;
 line-height: normal;
 
 }
-.Communitylink-container{
+.Communitylink-containerright{
     padding-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logoimagecommunity{
+.logoimagecommunityright{
     width: 75%;
 }
 .ImageContainerCommunityRight{
@@ -42,17 +43,172 @@ line-height: normal;
     z-index: 2;
 }
 
-.ContainingImageCommunity{
+.ContainingImageCommunityright{
     position: relative;
     border-radius: 228px;
     box-shadow: -3px 18px 10px 0px rgba(0, 0, 0, 0.25);
     
 }
-.imageCommunity{
+.imageCommunityright{
     position: absolute;
     z-index: 4;
     width: 180px;
 }
+
+
+@media only screen and (max-width: 1024px) {
+    .Name-container-community-right{
+        width: 30%;
+    }
+    .imageCommunityright{
+        transform: translateY(10%) scale(0.8);
+    }
+    .ImageContainerCommunityRight{
+        left: 23%;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 980px) {
+    .ImageContainerCommunityRight{ 
+        left: 19%;
+      
+    }
+    .imageCommunityright{
+        transform: translateY(10%) scale(0.6);
+    }
+    .logoimagecommunityright{
+        width: 50%;
+    }
+    .CommunityNameright{
+    font-size: 17px;
+    font-weight: 500;
+  }
+}
+  
+  @media only screen and (max-width: 720px) {
+    .ImageContainerCommunityRight{ 
+        left: 20%;
+      
+    }
+    .imageCommunityright{
+        transform: translateY(-3%) scale(0.5);
+    }
+    .Name-container-community-right{
+        width: 30%;
+    }
+    .CommunityNameright{
+        font-size: 25px !important;
+        font-weight: 500;
+      }
+
+      .logoimagecommunityright{
+        width: 60% !important;
+    }
+    .Communitylink-containerright{
+     margin-top: -7%;
+    }
+  
+
+  }
+
+  @media only screen and (max-width: 606px) {
+    .ImageContainerCommunityRight{ 
+        left: 17%;
+      
+    }
+    .imageCommunityright{
+        transform: translateY(-3%) scale(0.4);
+    }
+    .logoimagecommunity{
+        transform: scale(0.7);
+        margin-left: 20%;
+        width: 30%;
+        
+    }
+    .CommunityNameright{
+        font-size: 21px !important;
+        font-weight: 500;
+      }
+
+      .containerinsidenameCommunity-right{
+        margin-left: -20%;
+    }
+
+  }
+
+  @media only screen and (max-width: 542px) {
+    .ImageContainerCommunityRight{ 
+        left: 15%;
+      
+    }
+    .imageCommunityright{
+        transform: translateY(-3%) scale(0.4);
+    }
+    .logoimagecommunityright{
+        width: 47% !important;
+    }
+    .CommunityNameright{
+        font-size: 21px !important;
+        font-weight: 500;
+      }
+      .Name-container-community-right{
+        width: 30%;
+        height: auto;
+    }
+
+  }
+  
+  @media only screen and (max-width: 475px) {
+    .ImageContainerCommunityRight{ 
+        left: 14%;
+      
+    }
+    .imageCommunityright{
+        transform: translateY(-5%) scale(0.4);
+    }
+
+ 
+  }
+
+  @media only screen and (max-width: 388px) {
+    .ImageContainerCommunityRight{ 
+        left: 12%;
+      
+    }
+    .imageCommunityright{
+        transform: translateY(-7%) scale(0.4);
+    }
+
+    @media only screen and (max-width: 320px) {
+        .ImageContainerCommunityRight{ 
+            left: 3%;
+          
+        }
+        .imageCommunityright{
+            transform: translateY(-10%) scale(0.2);
+        }
+        .logoimagecommunityright{
+            width: 30% !important;
+        }
+        .CommunityNameright{
+            font-size: 17px !important;
+            font-weight: 500;
+          }
+          .Name-container-community-right{
+            width: 30%;
+            height: auto;
+        }
+    
+     
+      }
+    
+
+ 
+  }
+
+
 
 
 

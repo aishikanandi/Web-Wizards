@@ -9,11 +9,14 @@ import WallOfFame from "./wallOfFame";
 import Navbar from "./components/navbar";
 import OpenSourcePrograms from "./OpenSourcePrograms";
 import OpenSourceIndividualProgram from './OpenSourceIndividualProgram';
+import Community from "./Community";
+import BlogPage from "./BlogPage";
+
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="waveUp" />
+      <WaveUpWithCondition/>
       <NavbarWithCondition />
       <Routes>
         <Route path="/" element={<LandingPage />} />
@@ -25,6 +28,8 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/opensource" element={<OpenSourcePrograms />} />
         <Route path="/opensource/program" element={<OpenSourceIndividualProgram />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/blogs/:id" element={<BlogPage />} />
       </Routes>
     </BrowserRouter>
   );
@@ -36,5 +41,11 @@ function NavbarWithCondition() {
 
   return !hideNavbar ? <Navbar className="navBar" /> : null;
 }
+function WaveUpWithCondition() {
+  const location = useLocation();
+  const regex = /^\/blogs(\/.*)?$/;
+  const hideWaves = regex.test(location.pathname);
 
+  return hideWaves ? <div className="waveUpStylish" /> : <div className="waveUp" />;
+}
 export default App;
