@@ -238,6 +238,7 @@ p.programDescription{
     font-style: normal;
     line-height: normal;
     width: 55%;
+    cursor: pointer;
 }
 
 .program-date{
