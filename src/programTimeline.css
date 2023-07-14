@@ -37,9 +37,10 @@ p.programDescription{
     font-family: 'Nanum Gothic', 'sans-serif' !important;
     font-size: medium;
 }
-.programs-heading h1{
+.programs-heading img{
     margin-top: 120%;
 }
+
 .programs-heading{
     font-size: 325%;
     font-family: Montserrat, 'sans-serif';

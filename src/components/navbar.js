@@ -30,7 +30,7 @@ function Navbar() {
 				<a href="#" class="dropbtn" onHover={showNavbar2}>Programs<i class="fa fa-caret-down"></i></a>
 				<div class="dropdown-content" id='navRef'>
 					<a href="/programtimeline">Our Programs</a>
-					<a href="#">Opensource Programs</a>
+					<a href="/opensource">Opensource Programs</a>
 				</div></div>
 				<a href="/projects">Projects</a>
 				<div class="dropdown">

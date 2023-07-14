@@ -36,16 +36,23 @@ function Subscription(){
     }
     return(
         <div className="subscription">
+            <div className="subscription-heading">
+                    <h1>SUBSCRIPTION</h1>
+                </div>
             <div className="subscription-form">
                 <div className="subscription-form-heading">
                     <h1>Subscribe for the newsletter</h1>
                 </div>
-                <input type="text" className="subscription-form-input" placeholder="First Name" value={firstName} onChange={handleFirstNameChange} required autoFocus /> <br />
-                <input type="text" className="subscription-form-input" placeholder="Last Name" value={lastName} onChange={handleLastNameChange} required /> <br />
-                <input type="email" className="subscription-form-input" placeholder="Email Address" value={email} onChange={handleEmailChange} required /> <br />
+                <div className="form-inputs"><label for="subscription-form-input" className="inputlabels">Enter your First Name</label><br />
+                <input type="text" placeholder="" className="subscription-form-input" value={firstName} onChange={handleFirstNameChange} required autoFocus /> <br />
+                <label for="subscription-form-input" className="inputlabels">Enter your Last Name</label><br />
+                <input type="text" placeholder="" className="subscription-form-input" value={lastName} onChange={handleLastNameChange} required /> <br />
+                <label for="subscription-form-input" className="inputlabels">Enter your Email Address</label><br />
+                <input type="email" className="subscription-form-input" placeholder= "" value={email} onChange={handleEmailChange} required /> <br />
                 <button className="subscription-form-button" type="submit" onClick={() => {
                     handleclick();
                   }}>Sign Me Up!</button>
+                </div>
             </div>
             <Footer className="footer"></Footer>
         </div>

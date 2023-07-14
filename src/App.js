@@ -7,6 +7,8 @@ import Projects from "./Projects";
 import Subscription from "./Subscription";
 import WallOfFame from "./wallOfFame";
 import Navbar from "./components/navbar";
+import OpenSourcePrograms from "./OpenSourcePrograms";
+import OpenSourceIndividualProgram from './OpenSourceIndividualProgram';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/walloffame" element={<WallOfFame />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/opensource" element={<OpenSourcePrograms />} />
+        <Route path="/opensource/program" element={<OpenSourceIndividualProgram />} />
       </Routes>
     </BrowserRouter>
   );

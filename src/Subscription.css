@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
 
 .subscription{
     color: hsl(0, 0%, 100%);
@@ -9,13 +9,24 @@
     font-style: normal;
 }
 
+.subscription-heading{
+    font-size: 375%;
+    padding: 1rem 0;
+    font-family: "Montserrat";    
+    font-weight: 700;
+    /* position: relative; */
+    left: 50%;
+    text-align: center;
+}
+
 .subscription-form{
-    margin: 20rem auto;
+    margin: 8rem auto;
     width: 100%;
-    max-width: 20.625rem;
+    max-width: 40rem;
     /* display: flex;
     align-self: center; */
     padding: 2.5rem 0;
+    text-align: center;
 }
 
 .subscription-form-heading{
@@ -30,6 +41,9 @@
     height: auto;
     padding: 0.625rem;
     font-size: 1rem;
+    margin: 1rem 0;
+    width: 50%;
+    border-radius: 0.438rem;
 }
 
 .subscription-form-input:focus{
@@ -41,9 +55,48 @@
     padding: 1.32% 2.64%;
     margin: 3%;
     background: #EFECEC;
-    font-family: Nanum Gothic;
-    font-weight: 700;
+    font-family: "Nanum Gothic";
+    font-weight: 800;
     font-style: normal;
     line-height: normal;
+    border-radius: 0.75rem;
+    margin-top: 0.625rem;
+}
+
+.inputlabels{
+    font-family: "Nanum Gothic";
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 45%;
+}
+
+@media (max-width: 676px) {
+    .subscription-form-input{
+        width: 80%;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1025px) {
+    .subscription-heading{
+        font-size: 262.5%
+    }
+}
+
+@media (min-width: 485px) and (max-width: 720px) {
+    .subscription-heading{
+        font-size: 187.5%
+    }
+}
+
+@media (max-width: 485px) {
+    .subscription-heading{
+        font-size: 112.5%
+    }
+}
+
+@media (max-width: 455px) {
+    .subscription-heading{
+        margin-top: -1rem;
+    }
 }
 
