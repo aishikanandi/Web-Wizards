@@ -12,8 +12,6 @@ import Carousel from "./components/CarouselApp";
 function Projects() {
   return (
     <>
-    <div className="waveUpProjectspage" />
-      <Navbar className="navBar" />
     <div className="projects-container">
 <div>
   <TitleImage className="title-image" alt="title" />

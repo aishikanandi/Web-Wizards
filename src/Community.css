@@ -1,0 +1,25 @@
+.waveUpCommunitypage {
+    position: absolute;
+    top: -7%;
+    left: 0;
+    height: 60vh;
+    width: 100%;
+    background-image: url("./CommunitypageComponents/CommunityBGDesign.svg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+
+  .title-image {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7%;
+    margin-bottom: 4%;
+  }
+  
+
+  .footercontainer{
+    margin-top: 10%;
+  }
