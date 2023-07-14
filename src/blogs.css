@@ -1,6 +1,8 @@
 .blogs-container {
 display: flex;
 flex-direction: row;
+justify-content: center;
+align-items: center;
   }
 .blogs-title{
     display: flex;
@@ -10,6 +12,46 @@ flex-direction: row;
     margin-bottom: 10%;
     height: 90%;
 }
+.blogs-container .learn-more-button {
+  padding-right: 50%;}
+  @media only screen and (max-width: 1129px) {
+
+    .blogs-container .project-card {
+      width: 30%;
+      margin-right: 50px;
+    }
+    .blogs-container .project-name {
+      font-size: 30px;
+    }
+    .blogs-container .project-description {
+      font-size: 14px;
+      margin-left: 11px;
+    }
+    
+  }
+  @media only screen and (max-width:1029px) {
+
+    .blogs-container .learn-more-button {
+      padding-right: 10%;}
+
+  }
+  @media only screen and (max-width: 865px) {
+
+    .blogs-container{
+      flex-direction: column;
+    }.blogs-container .project-card {
+      width: 22rem;
+      margin-right: 30px;
+    }
+    .blogs-container .project-name {
+      font-size: 35px;
+    }
+    .blogs-container .project-description {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
+  }
 div.blogs-container a{
  width: 30%;
 }
@@ -17,25 +59,27 @@ div.blogs-container a{
  margin-top: 60%;
 }
 
-@media only screen and (max-width: 457px){
+@media only screen and (max-width: 459px){
   .blogsPage .rounded-social-buttons {
     margin-top: 120% !important;
    }
 } 
-@media only screen and (max-width: 685px){
+@media only screen and (max-width: 720px){
   .blogsPage .rounded-social-buttons {
     margin-top: 120% !important;
    }
    .blogs-title img{
     height: 4rem;
 }
+.blogs-container .learn-more-button {
+  padding-right: 10% !important;}
 } 
 @media only screen and (max-width: 417px){
   .blogsPage .rounded-social-buttons {
     margin-top: 160% !important;
    }
    .blogs-title img{
-    height: 4rem;
+    height: 3rem;
 }
 } 
 @media only screen and (max-width: 320px){
@@ -43,6 +87,20 @@ div.blogs-container a{
     margin-top: 200% !important;
    }
    .blogs-title img{
-    height: 4rem;
+    height: 3rem;
 }
-} 
+} @media only screen and (max-width: 633px) {
+
+  .blogs-container{
+    flex-direction: column;
+  }.blogs-container .project-card {
+    width: 18rem;
+    margin: 30px;
+  }
+  .blogs-container .project-name {
+    font-size: 35px;
+  }
+  .blogs-container .project-description {
+    font-size: 20px;
+    margin-left: 10px;
+  }}
