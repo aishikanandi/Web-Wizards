@@ -48,7 +48,7 @@ function RenderProjectCards() {
             "name": "Outreachy",
             "description": "Outreachy is a global program that provides paid internships to individuals from underrepresented groups in the field of technology. The program aims to support and empower aspiring technologists, especially those who face systemic barriers and lack access to traditional pathways in the tech industry. Outreachy offers a unique opportunity for participants to work on open-source projects with established organizations and gain hands-on experience in a supportive and inclusive environment. During the internship, Outreachy participants collaborate with mentors who guide and mentor them throughout the project. They contribute to open-source software development, working on coding tasks, bug fixes, documentation, and other project-related activities.",
             "logo": "Outreachy.png",
-            "BGremovedlogo": "outreachyRemovedBG.svg"
+            "BGremovedlogo": "outreachyRemovedBG.png"
         },
         {
             "id": 3,

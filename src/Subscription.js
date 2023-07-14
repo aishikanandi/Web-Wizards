@@ -6,6 +6,7 @@ import "./Subscription.css";
 import axios from 'axios';
 
 function Subscription(){
+    const [showDiv, setShowDiv] = useState(false);
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
@@ -29,6 +30,7 @@ function Subscription(){
         .post(url, data)
         .then((response) => {
             console.log(response.data);
+            setShowDiv(!showDiv);
         })
         .catch((error) => {
             console.error(error.message);
@@ -38,7 +40,7 @@ function Subscription(){
         <div className="subscription">
             <div className="subscription-heading">
                     <h1>SUBSCRIPTION</h1>
-                </div>
+            </div>
             <div className="subscription-form">
                 <div className="subscription-form-heading">
                     <h1>Subscribe for the newsletter</h1>
@@ -53,6 +55,7 @@ function Subscription(){
                     handleclick();
                   }}>Sign Me Up!</button>
                 </div>
+                {showDiv && <div className="submit-response" style={{ display: 'block' }}>Thank You for registering!</div>}
             </div>
             <Footer className="footer"></Footer>
         </div>
