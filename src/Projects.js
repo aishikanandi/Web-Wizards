@@ -7,7 +7,9 @@ import { ReactComponent as ListOfProjectsImage } from './ProjectPageElements/LIS
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import "./landingPage.css";
-import Carousel from "./components/CarouselApp";
+import { useNavigate } from 'react-router-dom';
+
+import Carousel from "./components/CarouselWithoutText";
 
 function Projects() {
   return (
@@ -16,7 +18,6 @@ function Projects() {
 <div>
   <TitleImage className="title-image" alt="title" />
 </div>
-      <Carousel />
       <div  className="display_cards_projectpage">
         <RenderProjectCards />
       </div>
@@ -26,51 +27,69 @@ function Projects() {
 }
 
 function RenderProjectCards() {
-  return (
-    <>
-    <div className="all-projects-container">
-      <ProjectCard
-        screenshot={require('./ProjectPageElements/FFmpeg_screenshot.jpeg')}
-        projectName="FFmpeg"
-        description="FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created."
-        link="#"
-      />
-      <ProjectCard
-        screenshot={require("./ProjectPageElements/Ignitus_screenshot.jpeg")}
-        projectName="Ignitus"
-        description="Ignitus a non-profit organization that helps students and professionals across the world get handpicked top quality global research and industrial internships, for free!"
-        link="#"
-      />
-      <ProjectCard
-        screenshot={require("./ProjectPageElements/DBpedia_screenshot.jpeg")}
-        projectName="DBpedia"
-        description="DBpedia is a project aiming to extract structured content from the information created in the Wikipedia project."
-        link="#"
-      />
-      <ProjectCard
-        screenshot={require("./ProjectPageElements/Evote_screenshot.jpeg")}
-        projectName="IBM/EVOTE"
-        description="A voting application that leverages Hyperledger Fabric and the IBM Blockchain Platform to record and tally ballots."
-        link="#"
-      />
-      <ProjectCard
-        screenshot={require("./ProjectPageElements/FreeCodeCamp_screenshot.jpeg")}
-        projectName="Free Code Camp"
-        description="Platform to learn to code for free with millions of other people around the world"
-        link="#"
-      />
-      <ProjectCard
-        screenshot={require('./ProjectPageElements/Haiku_screenshot.jpeg')}
-        projectName="Haiku"
-        description="An open-source operating system that specifically targets personal computing."
-        link="#"
-      />
-    </div>
-    <Footer className="footer" />
-    </>
-  );
+  const nav = useNavigate();
+  function handleclick(project){
+    console.log(project);
+    nav("/projects/project", { state: { results: project } });
+  }
+  const projects=[
+    {
+      "id": 1,
+      "screenshot": "FFmpeg_screenshot.jpeg",
+      "projectName": "FFmpeg",
+      "description": "FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created."
+  },{
+    "id": 2,
+    "screenshot": "Ignitus_screenshot.jpeg",
+    "projectName": "Ignitus",
+    "description": "Ignitus is a non-profit organization that helps students and professionals across the world get handpicked top quality global research and industrial internships, for free!",
+  },
+  {
+    "id": 3,
+    "screenshot": "DBpedia_screenshot.jpeg",
+    "projectName": "DBpedia",
+    "description": "DBpedia is a project aiming to extract structured content from the information created in the Wikipedia project.",
 
-  
+  },
+  {
+    id: 4,
+    "screenshot": "Evote_screenshot.jpeg",
+    "projectName": "IBM/EVOTE",
+    "description": "A voting application that leverages Hyperledger Fabric and the IBM Blockchain Platform to record and tally ballots.",
+
+  },
+  {
+    "id": 5,
+    "screenshot": "FreeCodeCamp_screenshot.jpeg",
+    "projectName": "Free Code Camp",
+    "description": "Platform to learn to code for free with millions of other people around the world.",
+  },
+  {
+    "id": 6,
+    "screenshot": "Haiku_screenshot.jpeg",
+    "projectName": "Haiku",
+    "description": "An open-source operating system that specifically targets personal computing.",
+  }
+];
+
+return (
+  <>
+  <div className="all-projects-container">
+    {projects.map((project) => (
+      <ProjectCard
+        key={project.id}
+        screenshot={require("./ProjectPageElements/"+project.screenshot)}
+        projectName={project.projectName}
+        description={project.description}
+        onClick={() => {
+          handleclick(project);
+        }}
+      />
+    ))}
+  </div>
+  <Footer className="footer" />
+  </>
+);
 }
 
 export default Projects;

@@ -1,37 +1,31 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import Footer from "./components/footer";
+import './landingPage.css';
+import {useEffect} from 'react';
+import { useLocation } from "react-router-dom";
+import './ProjectPage.css';
 
-function ProjectPage() {
-  const { projectId } = useParams(); // Access the projectId from URL parameters
-  const project = getProjectById(projectId);
-
-  if (!project) {
-    return <div>Project Not Found</div>;
-  }
-
-  return (
-    <div>
-      <h2>{project.projectName}</h2>
-      <img src={project.screenshot.default} alt={project.projectName} />
-      <p>{project.description}</p>
-    </div>
+function Project(){
+  const location = useLocation();
+  const { results } = location.state;
+  console.log(results);
+  const capitalizedProgramName = results.projectName.toUpperCase();
+  return(
+      <div >
+          <div >
+              <div >
+                  <h1>{capitalizedProgramName}</h1>
+              </div>
+              <div >
+                  {/* <img src={require('./OpenSourceProgramPageElements/' + results.BGremovedlogo)} /> */}
+              </div>
+              <div >
+                  <p>{results.description}</p>
+              </div>
+          </div>
+          <Footer className="footer" />   
+      </div>
   );
 }
 
-// Function to get the project information based on ID
-function getProjectById(projectId) {
-  const projects = [
-    {
-      id: 1,
-      screenshot: require('./ProjectPageElements/FFmpeg_screenshot.jpeg'),
-      projectName: 'FFmpeg',
-      description:
-        'FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created.',
-    },
-    // Add more projects here
-  ];
-
-  return projects.find((project) => project.id === Number(projectId));
-}
-
-export default ProjectPage;
+export default Project;

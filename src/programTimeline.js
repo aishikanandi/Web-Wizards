@@ -132,8 +132,9 @@ function ProgramTimeline(){
           ))}
             </div>
             </div>
-            <Footer className="footer" />
-        </div></>
+            
+        </div>
+        <Footer className="footer" /></>
     );
 }
 

@@ -32,7 +32,6 @@ function truncateDescription(description) {
 function RenderProjectCards() {
   const nav = useNavigate();
   function handleclick(open_source_program){
-    console.log(open_source_program);
     nav("/opensource/program", { state: { results: open_source_program } });
   }
     const open_source_programs = [

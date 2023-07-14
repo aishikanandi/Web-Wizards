@@ -23,6 +23,7 @@
     background-color: black;
     padding: 6%;
     color: white;
+    min-height: 120vh;
   }
   .blog-author{
     font-weight: bold;

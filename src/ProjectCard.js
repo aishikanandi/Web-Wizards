@@ -11,7 +11,7 @@ function ProjectCard(props) {
         <h1 className="project-name">{props.projectName}</h1>
         <p className="project-description">{props.description}</p>
         <div className="button-container">
-          <a href={props.link}>
+          <a onClick={props.onClick}>
             <LearnMoreButton alt="button.svg" className="learn-more-button" />
           </a>
         </div>

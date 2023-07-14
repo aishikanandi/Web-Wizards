@@ -11,7 +11,7 @@ import OpenSourcePrograms from "./OpenSourcePrograms";
 import OpenSourceIndividualProgram from './OpenSourceIndividualProgram';
 import Community from "./Community";
 import BlogPage from "./BlogPage";
-
+import ProjectPage from "./ProjectPage";
 
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/opensource" element={<OpenSourcePrograms />} />
         <Route path="/opensource/program" element={<OpenSourceIndividualProgram />} />
+        <Route path="/projects/project" element={<ProjectPage />} />
         <Route path="/community" element={<Community />} />
         <Route path="/blogs/:id" element={<BlogPage />} />
       </Routes>
