@@ -1,29 +1,46 @@
 .waveUpProjectspage {
-  position: absolute;
-  top: -7%;
-  left: 0;
-  height: 60vh;
-  width: 100%;
-  background-image: url("./ProjectPageElements/BG-DESIGN (1)projectpage.svg");
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
+    position: absolute;
+    top: -7%;
+    left: 0;
+    height: 60vh;
+    width: 100%;
+    background-image: url("./ProjectPageElements/BG-DESIGN (1)projectpage.svg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
 
-.display_cards_projectpage {
+.display_cards_programpage {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  bottom: 0;
 }
 
-.projects-container {
+@media (min-width: 455px) and (max-width: 720px) {
+    .open-source-programs-container .rounded-social-buttons{
+      margin-top: 50%;
+    } 
+}
+
+@media (max-width: 455px) {
+    .open-source-programs-container .rounded-social-buttons{
+      margin-top: 172%;
+    }
+}
+
+.open-source-programs-container .rounded-social-buttons{
+  /* margin-top: 60%; */
+}
+
+.open-source-programs-container {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.title-image {
+.open-source-title-image {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -81,7 +98,7 @@
   margin-top: 0px;
   display: flex;
   justify-content: flex-end;
- height: 50px;
+  height: 50px;
 }
 
 .background-card {
@@ -98,65 +115,80 @@
   position: relative;
   margin: 60px;
   width: 25%;
+  height: 25%;
 }
 
-.all-projects-container {
+.all-open-source-programs-container {
   position: relative;
-  margin-top: 40%;
+  margin-top: 13%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 10%;
 }
+
 @media only screen and (max-width: 1630px) {
-  .all-projects-container {
-    margin-top: 45%;
+  .all-open-source-programs-container {
+    margin-top: 15%;
   }
 }
 @media only screen and (max-width: 1395px) {
-  .all-projects-container {
-    margin-top: 50%;
+  .all-open-source-programs-container {
+    margin-top: 17%;
   }
 }
 @media only screen and (max-width: 1200px) {
-  .all-projects-container {
-    margin-top: 61% !important;
+  .all-open-source-programs-container {
+    margin-top: 19% !important;
   }
 }
+
+@media only screen and (max-width: 1025px) {
+    .all-open-source-programs-container {
+      margin-top: 13% !important;
+    }
+  }
+
 @media only screen and (max-width: 940px) {
-  .all-projects-container {
-    margin-top: 67% !important;
+  .all-open-source-programs-container {
+    margin-top: 15% !important;
   }
 }
 
 @media only screen and (max-width: 823px) {
-  .all-projects-container {
-    margin-top: 75% !important;
+  .all-open-source-programs-container {
+    margin-top: 17% !important;
   }
 }
 
 @media only screen and (max-width: 729px) {
-  .all-projects-container {
-    margin-top: 84% !important;
+  .all-open-source-programs-container {
+    margin-top: 19% !important;
   }
 }
 @media only screen and (max-width: 643px) {
-  .all-projects-container {
-    margin-top: 95% !important;
+  .all-open-source-programs-container {
+    margin-top: 21% !important;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  .all-projects-container {
-    margin-top: 105% !important;
+  .all-open-source-programs-container {
+    margin-top: 27% !important;
   }
 }
+
+@media only screen and (max-width: 453px) {
+    .all-open-source-programs-container {
+      margin-top: 22% !important;
+    }
+  }
 
 
 
 @media only screen and (max-width: 1024px) {
-  .title-image {
+  .open-source-title-image {
     width: 40%;
   }
   .waveUpProjectspage {
@@ -183,7 +215,7 @@
 }
 
 @media only screen and (max-width: 720px) {
-  .title-image {
+  .open-source-title-image {
     width: 40%;
     margin-top: 3%;
   }
@@ -211,13 +243,13 @@
     margin-right: -10px;
     width: 100px;
   }
-  .all-projects-container {
+  .all-open-source-programs-container {
     margin-top: 50%;
   }
 }
 
 @media only screen and (max-width: 455px) {
-  .title-image {
+  .open-source-title-image {
     width: 40%;
     margin-top: -5%;
   }
@@ -238,68 +270,15 @@
     font-size: 4px;
     margin-left: 3px;
   }
-  .projects-container .learn-more-button {
+  .learn-more-button {
     width: 50px;
     margin-top: -59%;
     margin-right: 45%;
   }
-  .projects-container .button-container {
+  .button-container {
     margin-top: 0px;
     display: flex;
     justify-content: center;
     height: 10px;
   }
-}
-
-@media only screen and (max-width: 455px) {  
-  .all-projects-container {
-  margin-top: 125% !important;
-}}
-
-@media only screen and (max-width: 500px) {
-  .all-projects-container {
-    margin-top: 119% !important;
-  }
-}
-
-
-@media only screen and (max-width: 430px) {
-  .all-projects-container {
-    margin-top: 130% !important;
-  }
-
-}
-
-@media only screen and (max-width: 400px) {
-  .all-projects-container {
-    margin-top: 140% !important;
-  }
-
-}
-
-@media only screen and (max-width: 370px) {
-  .all-projects-container {
-    margin-top: 155% !important;
-  }
-
-}
-@media only screen and (max-width: 350px) {
-  .all-projects-container {
-    margin-top: 165% !important;
-  }
-
-}
-
-@media only screen and (max-width: 330px) {
-  .all-projects-container {
-    margin-top: 178% !important;
-  }
-
-}
-
-@media only screen and (max-width: 310px) {
-  .all-projects-container {
-    margin-top: 190% !important;
-  }
-
 }

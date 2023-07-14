@@ -104,7 +104,7 @@ function ProgramTimeline(){
         <div className = "programTimeline">
             <div className='programs-container'>
             <div className='programs-heading'>
-                <h1>PROGRAMS</h1>
+                <img src="Programs.svg" alt="" />
             </div>
             <div className='timeline'>
                 <div className='line'></div>
