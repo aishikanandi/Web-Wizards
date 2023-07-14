@@ -26,6 +26,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 1%;
 }
 
 .program-poster{
@@ -104,9 +105,6 @@
 }
 
 @media (min-width: 865px) and (max-width: 1233px) {
-    .program-name{
-        font-size: 262.5%;
-    }
     .program-poster{
         width:  28.175rem;
         height: 70%;
@@ -116,16 +114,49 @@
         font-size: 157.5%;
         margin-top: 92rem;
     }
+}
+
+@media (min-width: 1096px) and (max-width: 1233px) {
     .program-description{
         font-size: 157.5%;
-        margin-top: 115rem;
+        margin-top: 110rem;
+    }
+}   
+
+@media (min-width: 952px) and (max-width: 1096px) {
+    .program-description{
+        font-size: 157.5%;
+        margin-top: 112rem;
+    }
+}   
+
+@media (min-width: 865px) and (max-width: 952px) {
+    .program-description{
+        font-size: 157.5%;
+        margin-top: 114rem;
+    }
+}   
+
+@media (min-width: 1025px) and (max-width: 1233px) {
+    .program-name{
+        font-size: 262.5%;
+        padding: 2rem 0;
+        margin-bottom: 1.5%;
+    }
+}
+
+@media (min-width: 865px) and (max-width: 1024px) {
+    .program-name{
+        font-size: 262.5%;
+        /* padding: 0.1rem 0; */
+        margin: -3% 0 -2%;
     }
 }
 
 @media (min-width: 620px) and (max-width: 864px) {
     .program-name{
         font-size: 187.5%;
-        margin: -1rem 0;
+        margin: -3% 0 1%;
     }
     .program-poster{
         width:  20.125rem;
@@ -136,16 +167,47 @@
         font-size: 112.5%;
         margin-top: 64rem;
     }
+}
+
+@media (min-width: 783px) and (max-width: 865px) {
+    .program-description{
+        font-size: 112.5%;
+        margin-top: 77rem;
+    }
+}   
+
+@media (min-width: 680px) and (max-width: 783px) {
     .program-description{
         font-size: 112.5%;
         margin-top: 78rem;
     }
+}   
+
+@media (min-width: 620px) and (max-width: 680px) {
+    .program-description{
+        font-size: 112.5%;
+        margin-top: 79rem;
+    }
+}   
+
+@media (min-width: 470px) and (max-width: 620px) {
+    .program-description{
+        font-size: 67.5%;
+        margin-top: 46rem; 
+    }
 }
 
-@media (min-width: 400px) and (max-width: 620px) {
+@media (min-width: 455px) and (max-width: 470px) {
+    .program-description{
+        font-size: 67.5%;
+        margin-top: 47rem;
+    }
+}   
+
+@media (min-width: 455px) and (max-width: 620px) {
     .program-name{
         font-size: 112.5%;
-        margin: -2rem 0;
+        margin: -3% 0 -1.5%;
     }
     .program-poster{
         width:  12.075rem;
@@ -156,35 +218,61 @@
         font-size: 67.5%;
         margin-top: 39rem;
     }
-    .program-description{
-        font-size: 67.5%;
-        margin-top: 47rem; 
-    }
 }
 
-@media (max-width: 400px){
+@media (max-width: 455px) {
     .program-name{
-        font-size: 75%;
-        margin: -2rem 0;
+        font-size: 112.5%;
+        margin: -15% 0 -5%;
     }
     .program-poster{
         width:  12.075rem;
         height: 30%;
-        margin-top: 20rem;
+        margin-top: 18rem;
+    }
+    .event-date-container{
+        font-size: 67.5%;
+        margin-top: 37rem;
+    }
+}
+
+@media (min-width: 408px) and (max-width: 455px) {
+    .program-description{
+        font-size: 67.5%;
+        margin-top: 45rem;
+    }    
+}
+
+@media (max-width: 408px) {
+    .program-description{
+        font-size: 67.5%;
+        margin-top: 46rem;
+    }
+}
+
+/* @media (max-width: 400px){
+    .program-name{
+        font-size: 75%;
+        margin: -10rem 0 -8rem;
+    }
+    .program-poster{
+        width:  12.075rem;
+        height: 30%;
+        margin-top: 17rem;
     }
     .event-date-container{
         font-size: 45%;
-        margin-top: 38rem;
+        margin-top: 35rem;
     }
     .program-description{
         font-size: 45%;
         margin-top: 43rem;
     }
-}
+} */
 
 @media (min-width: 1365px) and (max-width: 1572px) {
     .program-description{
-        margin-top: 165rem;
+        margin-top: 161rem;
     }    
     .individual-program{
         padding-bottom: 92%;
@@ -193,7 +281,7 @@
 
 @media (min-width: 1234px) and (max-width: 1365px) {
     .program-description{
-        margin-top: 168rem;
+        margin-top: 165rem; 
     }
     .individual-program{
         padding-bottom: 105%;
