@@ -12,7 +12,7 @@ import Community from "./Community";
 function App() {
   return (
     <BrowserRouter>
-      <div className="waveUp" />
+      <WaveUpWithCondition/>
       <NavbarWithCondition />
       <Routes>
         <Route path="/" element={<LandingPage />} />
@@ -34,5 +34,11 @@ function NavbarWithCondition() {
 
   return !hideNavbar ? <Navbar className="navBar" /> : null;
 }
+function WaveUpWithCondition() {
+  const location = useLocation();
+  const regex = /^\/blogs(\/.*)?$/;
+  const hideWaves = regex.test(location.pathname);
 
+  return hideWaves ? <div className="waveUpStylish" /> : <div className="waveUp" />;
+}
 export default App;

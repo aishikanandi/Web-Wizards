@@ -11,6 +11,17 @@
     background-position: center;
     z-index: -1;
 }
+.waveUpStylish{
+  position: absolute;
+  top: -10%;
+  left: 0;
+  height: 50vh;
+  width: 100%;
+  background-image: url("../public/blogs-bg.svg"); /* Replace with the path to your background image */
+  background-size:cover;
+  background-position: center;
+  z-index: -1;
+}
 .neon {
   color: #fff;
   text-shadow:
