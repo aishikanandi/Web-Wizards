@@ -10,3 +10,6 @@ flex-direction: row;
     margin-bottom: 10%;
     height: 90%;
 }
+div.blogs-container a{
+ width: 30%;
+}
