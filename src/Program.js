@@ -35,7 +35,7 @@ function Program(){
                     <p>{results.description}</p>
                 </div>
             </div>
-            <Carousel/>
+            <Carousel text=''/>
             <Footer className="footer" />   
         </div>
     );

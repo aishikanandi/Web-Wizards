@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./CarouselWithoutText.css";
 
-export default function CarouselWithoutText(){
+export default function CarouselWithoutText(props){
     const [selectedIndex, setSelectedIndex] = useState(0);
     const cellCount = 9;
 
@@ -23,6 +23,7 @@ export default function CarouselWithoutText(){
     return(
         <div className='carousel-containing-buttons'>
             <div className="image-carousel-container">
+            <h1>{props.text}</h1>
             <div className="image-carousel">
                 <div class="carousel_image"></div>
                 <div class="carousel_image"></div>

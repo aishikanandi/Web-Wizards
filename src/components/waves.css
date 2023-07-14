@@ -122,6 +122,23 @@
     }
     .wav{
         height: 80%;
+    }.wav#wave1{
+        z-index:1000;
+        opacity:1;
+        background-position-x: -100px !important;
+    }
+    .wav#wave2{
+        z-index:999;
+        opacity:0.2;
+        background-position-x: -200px !important;
+    }.wav#wave3{
+        z-index:998;
+        opacity:0.5;
+        background-position-x: -300px;
+    }.wav#wave1{
+        z-index:999;
+        opacity:0.7;
+        background-position-x: -400px;
     }
 }
 

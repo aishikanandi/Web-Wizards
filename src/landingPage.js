@@ -5,7 +5,7 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import WaterText from "./components/waterText";
 import Waves from "./components/waves";
-import Carousel from "./components/CarouselApp.js";
+import Carousel from "./components/CarouselWithoutText";
 import Intro from "./components/Intro.js";
 
 function LandingPage() {
@@ -24,7 +24,7 @@ function LandingPage() {
   <Waves />
     <Intro /> 
 
-    <div className="landingpaagecarousel"><Carousel/></div>
+    <div className="landingpaagecarousel"><Carousel text='OUR PROJECTS'/></div>
     
     <Footer className="footer" />   
     </React.Fragment> 

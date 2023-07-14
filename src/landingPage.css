@@ -34,11 +34,34 @@
     0 0 100px #0ff,
     0 0 150px #0ff;
 }
-.landingpaagecarousel{
-  padding-top: 28%!important;
-  padding-bottom: 8%;
-}
 
+.landingpaagecarousel .carousel_image:nth-child(1) {
+  background-image: url("./ProjectPageElements/DBpedia_screenshot.jpeg");
+  transform: rotateY(  0deg) translateZ(26.875rem); }
+.landingpaagecarousel .carousel_image:nth-child(2) { 
+  background-image: url("./ProjectPageElements/Evote_screenshot.jpeg");
+    transform: rotateY( 40deg) translateZ(26.875rem); }
+.landingpaagecarousel .carousel_image:nth-child(3) {
+  background-image: url("./ProjectPageElements/FFmpeg_screenshot.jpeg");
+  transform: rotateY( 80deg) translateZ(26.875rem); }
+.landingpaagecarousel .carousel_image:nth-child(4) {
+  background-image: url("./ProjectPageElements/FreeCodeCamp_screenshot.jpeg");
+  transform: rotateY(120deg) translateZ(26.875rem); }
+.landingpaagecarousel .carousel_image:nth-child(5) { 
+  background-image: url("./ProjectPageElements/Haiku_screenshot.jpeg");
+ transform: rotateY(160deg) translateZ(26.875rem); }
+.landingpaagecarousel .carousel_image:nth-child(6) { 
+  background-image: url("./ProjectPageElements/Ignitus_screenshot.jpeg");
+ transform: rotateY(200deg) translateZ(26.875rem); }
+ .landingpaagecarousel .carousel_image:nth-child(7) {
+  background-image: url("./ProjectPageElements/DBpedia_screenshot.jpeg");
+  transform: rotateY(  240deg) translateZ(26.875rem); }
+.landingpaagecarousel .carousel_image:nth-child(8) { 
+  background-image: url("./ProjectPageElements/Evote_screenshot.jpeg");
+    transform: rotateY( 280deg) translateZ(26.875rem); }
+    .landingpaagecarousel .carousel_image:nth-child(9) {
+      background-image: url("./ProjectPageElements/FreeCodeCamp_screenshot.jpeg");
+      transform: rotateY(320deg) translateZ(26.875rem); }
 .navBar{
     position: fixed;
     top: 0;
@@ -81,8 +104,6 @@ display: flex;
   .centerLogo{
       width: 28%;
   }
-  }
-  @media only screen and (max-width: 1350px) {
     .tagline{
       margin-left: 8.5%;
       margin-top: 1.4%;
@@ -104,17 +125,23 @@ display: flex;
     .waveUp{
       height: 40vh;
     } 
-  }
-  @media only screen and (max-width: 1024px) {
     .tagline{
       margin-left: 17.5%;
       margin-top: 1.5%;
+    }
+  }
+  @media only screen and (max-width: 905px) {
+    .tagline{
+      margin-left: 19.5%;
+      margin-top: 1.8%;
     }
   }
   @media only screen and (max-width: 880px) {
     .tagline{
       margin-left: 19.5%;
       margin-top: 1.8%;
+    }.intro-container{
+      margin-bottom: 45% !important;
     }
   }
   @media only screen and (max-width: 760px) {
@@ -145,10 +172,7 @@ display: flex;
       margin-left: 19%;
       margin-top: 2%;
     }
-    .landingpaagecarousel{
-      padding-top: 38%!important;
-      padding-bottom: 2%;
-    }
+    
   }
   @media only screen and (max-width: 570px) {
     .tagline{
@@ -163,11 +187,7 @@ display: flex;
       margin-left: 20.5%;
       margin-top: 3%;
     }
-    .landingpaagecarousel{
-      padding-top: 38%!important;
-      padding-bottom: 3%;
 
-    }
     .neon {
       color: #fff;
       text-shadow:
@@ -187,10 +207,6 @@ display: flex;
     } 
     .mainLogo{
       padding: 2% 0 4% 0;
-    }
-    .landingpaagecarousel{
-      padding-top: 45%!important;
-      padding-bottom: 4%;
     }
   }
   @media only screen and (max-width: 480px) {

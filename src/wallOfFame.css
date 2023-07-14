@@ -59,7 +59,9 @@
     z-index: 5;
     background: linear-gradient(to top, #0F2027, #092f41);
   }
-
+.wallOfFameContainer header{
+  background: linear-gradient(to top, #092f41, #0F2027) !important;
+}
 .brickRow {
     display: flex;
     background: #ebebeb5a;
