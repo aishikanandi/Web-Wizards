@@ -20,10 +20,10 @@ function Project() {
       <div className="github-project-container">
         <div className="github-project-details">
           <div className="github-header">
-            <h1>{results.projectName}</h1>
-            <GitHubLogo className="github-logo" alt="GitHub Logo" />
+          <h1>{results.projectName}</h1>
+            <a href={results.link}><GitHubLogo className="github-logo" alt="GitHub Logo" /></a>
           </div>
-          <p className="github-project-description">{results.description}</p>
+          <p className="github-project-description">{results.description+" "}</p>
         </div>
         <div className="github-commit-timeline">
           <div className="github-commit-header">

@@ -75,6 +75,7 @@
 
 .learn-more-button {
   margin-right: -20px;
+  cursor: pointer;
 }
 
 .button-container {
@@ -179,6 +180,7 @@
   .learn-more-button {
     margin-right: -20px;
     width: 200px;
+
   }
 }
 
@@ -242,6 +244,7 @@
     width: 50px;
     margin-top: -59%;
     margin-right: 45%;
+    
   }
   .projects-container .button-container {
     margin-top: 0px;
