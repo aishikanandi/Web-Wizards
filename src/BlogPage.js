@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import "./BlogPage.css";
 import Footer from "./components/footer";
 
-const strapiUrl = "http://localhost:1337/api/blogs";
+const strapiUrl = "https://strapi-demo-app-zyay.onrender.com/api/blogs";
 
 const BlogPage = () => {
   const { id } = useParams();
