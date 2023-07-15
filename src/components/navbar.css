@@ -81,7 +81,7 @@ header .nav-btn {
 		align-items: center;
 		justify-content: center;
 		gap: 0.5rem;
-		background-color: rgba(31, 81, 128, 0.6);
+		background-color: rgb(108, 148, 185);
 		transition: 1s;
 	}
 

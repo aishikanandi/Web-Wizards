@@ -6,8 +6,7 @@ import BlogPage from './BlogPage';
 import Footer from './components/footer';
 import './blogs.css';
 
-const strapiUrl = 'http://localhost:1337/api/blogs';
-const strapiUrlFull = 'http://localhost:1337/api/blogs?populate=*';
+const strapiUrl = 'https://strapi-demo-app-zyay.onrender.com/api/blogs';
 
 const UserData = () => {
   const [blogPosts, setBlogPosts] = useState([]);
