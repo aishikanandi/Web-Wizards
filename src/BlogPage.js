@@ -27,7 +27,7 @@ const BlogPage = () => {
   if (!blogPost) {
     return <div>Loading...</div>;
   }
-
+const com="<---------------Your blog here--------------->";
   return (
     <div>
       <div className="blogPage-withoutfooter">
@@ -35,6 +35,7 @@ const BlogPage = () => {
         <p className="blog-author">Author: {blogPost.data.attributes.author}</p>
         <p className="blog-date">Date: {blogPost.data.attributes.date}</p>
         <div id="blog-content">
+          <p className="greyComment">{com}</p>
           <p>
             {blogPost.data.attributes.content.split(" ").map((word, index) => (
               <span

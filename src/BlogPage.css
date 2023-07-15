@@ -5,7 +5,6 @@
     text-align: center;
     margin: 5%;
     flex-direction: column;
-    font-family: Montserrat, Malgun Gothic, Ariel;
     color: white;
 }
 .blogPage-withoutfooter h1 {
@@ -18,25 +17,31 @@
     text-transform: uppercase;
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
   }
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500&family=Source+Code+Pro:wght@300&display=swap');
   #blog-content {
     margin-top: 5%;
-    background-color: black;
+    background-color: rgba(9, 24, 53, 0.946);
     padding: 6%;
+    padding-top: 3% !important;
     color: white;
     min-height: 120vh;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
   }
   .blog-author{
     font-weight: bold;
     padding: 0.5%;
+    font-family: Malgun Gothic, Montserrat, Ariel;
   }
   .blog-date{
     font-weight: bold;
     padding: 0.5%;
+    font-family: Malgun Gothic, Montserrat, Ariel;
   }
 
   @media only screen and (max-width: 823px) {
     .blogPage-withoutfooter h1 {
-        margin-top: 2%;
+        margin-top: 2% !important;
         font-size: 4em;}
 }
 @media only screen and (max-width: 600px) {
@@ -50,7 +55,8 @@
             padding: 1%;
           }div#blog-content{
             font-size: 85%;
-          }
+          }.blogPage-withoutfooter{
+            margin: 3%;}
 }
 @media only screen and (max-width: 400px) {
     #blog-content {
@@ -58,4 +64,9 @@
         padding: 5%;
 }
 
+}
+.greyComment{
+  color: rgba(215, 214, 214, 0.3);
+  font-weight: bold;
+  padding-bottom: 2.5%;
 }

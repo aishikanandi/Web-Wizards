@@ -1,9 +1,8 @@
-import React, { useState} from "react";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import React, { lazy,Suspense, useState} from "react";
 import "./landingPage.css";
 import "./Subscription.css";
 import axios from 'axios';
+const LazyFooter = lazy(() => import('./components/footer'));
 
 function Subscription(){
     const [showDiv, setShowDiv] = useState(false);
@@ -57,7 +56,8 @@ function Subscription(){
                 </div>
                 {showDiv && <div className="submit-response" style={{ display: 'block' }}>Thank You for registering!</div>}
             </div>
-            <Footer className="footer"></Footer>
+            <Suspense fallback={<div>Loading...</div>}></Suspense>
+            <LazyFooter className="footer"></LazyFooter>
         </div>
     );
 }   

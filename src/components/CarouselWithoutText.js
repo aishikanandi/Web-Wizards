@@ -12,13 +12,15 @@ export default function CarouselWithoutText(props){
     };
 
     const handlePrevButtonClick = () => {
-        setSelectedIndex((prevIndex) => prevIndex - 1);
         rotateCarousel();
+        setSelectedIndex((prevIndex) => prevIndex - 1);
+        
     };
 
     const handleNextButtonClick = () => {
-        setSelectedIndex((prevIndex) => prevIndex + 1);
         rotateCarousel();
+        setSelectedIndex((prevIndex) => prevIndex + 1);
+        
     };
     return(
         <div className='carousel-containing-buttons'>
@@ -37,7 +39,7 @@ export default function CarouselWithoutText(props){
             </div>
         </div>
         <p className="carousel-buttons">
-            <button onClick={handlePrevButtonClick} class="previous-button carousel-button">Previous</button>
+            <button onClick={handlePrevButtonClick} class="previous-button carousel-button">Prev</button>
             <button onClick={handleNextButtonClick} class="next-button carousel-button">Next</button>
         </p>
         </div>

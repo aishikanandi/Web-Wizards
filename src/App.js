@@ -28,7 +28,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/opensource" element={<OpenSourcePrograms />} />
         <Route path="/opensource/program" element={<OpenSourceIndividualProgram />} />
-        <Route path="/projects/project" element={<ProjectPage />} />
+        <Route path="/projects/:id" element={<ProjectPage />} />
         <Route path="/community" element={<Community />} />
         <Route path="/blogs/:id" element={<BlogPage />} />
       </Routes>
@@ -38,7 +38,8 @@ function App() {
 
 function NavbarWithCondition() {
   const location = useLocation();
-  const hideNavbar = location.pathname === "/walloffame";
+  
+  const hideNavbar = /^\/projects\/\d+$/.test(location.pathname) || location.pathname === "/walloffame";
 
   return !hideNavbar ? <Navbar className="navBar" /> : null;
 }
@@ -46,7 +47,7 @@ function WaveUpWithCondition() {
   const location = useLocation();
   const regex = /^\/blogs(\/.*)?$/;
   const hideWaves = regex.test(location.pathname);
-
+  if(location.pathname === "/walloffame") return null;
   return hideWaves ? <div className="waveUpStylish" /> : <div className="waveUp" />;
 }
 export default App;

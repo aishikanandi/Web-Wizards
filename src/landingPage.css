@@ -214,6 +214,8 @@ display: flex;
       font-size: 60%;
       margin-left: 20.5%;
       margin-top: 3.5%;
+    }.landingpaagecarousel .image-carousel-container{
+      margin: 0rem ;
     }
   }
   
@@ -229,9 +231,11 @@ display: flex;
       font-size: 50%;
       margin-left: 29.5%;
       margin-top: 4%;
+    }.landingpaagecarousel .image-carousel-container{
+      margin: 0rem ;
     }
   }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 326px) {
     .tagline{
       font-size: 50%;
       margin-left: 33.5%;
@@ -239,5 +243,13 @@ display: flex;
     }
     .mainLogo{
       padding: 8% 0 3% 0;
+    }div.landingpaagecarousel{
+      height: 80% !important;
+      padding: 0 !important;
+    }
+    .intro-container{
+      margin-bottom: 0 !important;
+    }.landingpaagecarousel .image-carousel-container{
+      margin: 0rem ;
     }
   }

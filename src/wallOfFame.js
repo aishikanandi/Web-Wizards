@@ -1,9 +1,8 @@
-import React from "react";
+import React, {lazy, Suspense} from "react";
 import Navbar from "./components/navbar";
-import Footer from "./components/footer";
 import "./wallOfFame.css";
 import "./famecard.css"
-
+const LazyFooter = lazy(() => import('./components/footer'));
 function WallOfFame() {
   return (
         
@@ -630,7 +629,8 @@ function WallOfFame() {
                 <div class="brick"></div>
                 <div class="brick"></div>
             </div>
-            <Footer className="footer" /> 
+            <Suspense fallback={<div>Loading...</div>}></Suspense>
+            <LazyFooter className="footer" /> 
         </div>
         
         <div className="cardContainer">

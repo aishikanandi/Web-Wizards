@@ -101,4 +101,8 @@
     background: #fefefe;
     border-color: #125688;
   }
-  
+  @media only screen and (max-width: 1000px) {
+    .rounded-social-buttons {
+      padding: 5%;
+    }
+  }

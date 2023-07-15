@@ -1,18 +1,16 @@
+
 import "./landingPage.css";
 import './components/waterText.css'
 import React from "react";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import { lazy, Suspense } from 'react';
 import WaterText from "./components/waterText";
 import Waves from "./components/waves";
-import Carousel from "./components/CarouselWithoutText";
 import Intro from "./components/Intro.js";
-
+const LazyCarousel = lazy(() => import('./components/CarouselWithoutText'));
+const LazyFooter = lazy(() => import('./components/footer'));
 function LandingPage() {
   return (
     <React.Fragment className="landingPage">
-       {/* <div className="waveUp" />
-      <Navbar className="navBar" /> */}
       <div className="MainPagePadding"><div className="mainLogo"><img
         className="centerLogo"
         alt=""
@@ -24,9 +22,9 @@ function LandingPage() {
   <Waves />
     <Intro /> 
 
-    <div className="landingpaagecarousel"><Carousel text='OUR PROJECTS'/></div>
-    
-    <Footer className="footer" />   
+    <div className="landingpaagecarousel"> <LazyCarousel text="OUR PROJECTS" /></div>
+    <Suspense fallback={<div>Loading...</div>}></Suspense>
+    <LazyFooter className="footer" />   
     </React.Fragment> 
   );
 }

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500&family=Source+Code+Pro:wght@300&family=VT323&display=swap');
+.github-project-container {
+    background-color: #120e0e;
+    padding: 2rem;
+    color: #ffffff;
+    min-height: 85vh;
+  }
+  .projectPagess  header .logo{
+    height: 70%;
+    padding-bottom: 0.5%;
+  }
+  .github-project-details {
+    margin-bottom: 2rem;
+  }
+  
+  .github-project-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .github-project-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .github-project-tech-stack,
+  .github-project-contributors {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .github-commit-timeline {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .github-commit {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  .github-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .github-header h1 {
+    font-size: 3rem;
+    margin-right: 1rem;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .github-logo {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+  }
+  .github-commit-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 1rem;
+  }
+  .github-project-description{
+    border-style: dotted;
+    border-color: #fff;
+    padding: 3%;
+  }
+  .github-commit-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #03d61c;
+    margin-right: 0.5rem;
+  }
+  
+  .github-commit-date {
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  .github-commit-details {
+    border-left: 2px solid #03d61c;
+    padding-left: 1rem;
+  }
+  
+  .github-commit-description,
+  .github-commit-tech-stack,
+  .github-commit-contributors {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer {
+    margin-top: 2rem;
+  }
+  .projectPagess .rounded-social-buttons{
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    background: linear-gradient(to top, #0F2027, #092f41);
+
+  }
+  .github-commit-image{
+    padding: 4%;
+    
+  }
+  .projectPagess header{
+
+    background: linear-gradient(to top, #092f41, #0F2027) !important;
+  }
+  .github-commit-tech-stack{
+    font-family: 'VT323', monospace;
+    color: #03d61c;
+    font-size: larger;
+    padding-bottom: 0.2%;
+  }
+  .github-commit-date{
+    padding-bottom: 0.4%;
+  }
