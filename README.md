@@ -1,4 +1,4 @@
-We have depolyed the Openlake website at : https://web-wizards-nine.vercel.app/
+We have deployed the Openlake website at : https://web-wizards-nine.vercel.app/
 To run the project :
 1) "npm i" in  root directory
 2) "npm i" in Backend/ Directory
